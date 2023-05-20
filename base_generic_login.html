@@ -1,0 +1,1094 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The world's leading QC Solution for Diag. Imaging</title>
+</head>
+
+
+{#{% extends "base_generic_login.html" %}#}
+{% load static %}
+
+<style>
+
+
+
+
+body {
+
+    background-color: darkgray ;
+
+
+
+
+}
+
+
+    h1 {
+	margin-left: 1em;
+	margin-top: 1.7em;
+	line-height: 1.3em;
+	color: #4682b4;
+    font-weight: bold;
+}
+img {
+	margin-left: 0.6em;
+}
+h2 {
+	font-size: 3em;
+	margin-top: 0.8em;
+	margin-left: 2em;
+}
+.min {
+	margin-top: 1em;
+	margin-left: 4.7em;
+	font-size: 1.3em;
+}
+.create {
+	width: 10.5rem;
+	height: 1.5em;
+	padding: 8px;
+	font-size: 1.1em;
+	margin-top: 1em;
+	border: 1px solid lightblue;
+	border-radius: 5px;
+}
+.wan {
+	margin-left: 5.5em;
+}
+.ease {
+	width: 23.4rem;
+	height: 1.5em;
+	padding: 8px;
+	font-size: 1.1em;
+	margin-top: 0.8em;
+	border: 1px solid lightblue;
+	border-radius: 5px;
+}
+.ano {
+	margin-left: 5.5em;
+}
+h3 {
+	font-size: 1.3em;
+	margin-left: 4.7em;
+	margin-top: 1em;
+}
+select {
+	height: 2.3em;
+	width: 4em;
+	border: 1px solid lightblue;
+	border-radius: 1px;
+	margin-top: 0.8em;
+}
+.select {
+	margin-left: 6em;
+}
+.long {
+	width: 5em;
+}
+.circle{
+	margin-left: 5em;
+	font-size: 1.3em;
+	font-weight: normal;
+	margin-top: 1em;
+}
+h5 {
+	width: 20rem;
+	font-weight: normal;
+	font-size: 11px;
+	word-spacing: 2.5px;
+	line-height: 1.3em;
+	margin-top: 1em;
+	margin-left: 8em;
+}
+.sign {
+	width: 12rem;
+	height: 2.5em;
+	padding: 8px;
+	font-size: 1.1em;
+	margin-top: 1em;
+	background-color: #228b22;
+	border: 1px solid darkgreen;
+	border-radius: 5px;
+	margin-left: 5.5em;
+	color: white;
+	text-shadow: 5px;
+	font-weight: bold;
+}
+.h4 {
+	word-spacing: 3px;
+	margin-left: 6em;
+	margin-top: 2em;
+}
+
+    .responsive {
+        width: 100%;
+        height: 100%;
+    }
+
+    .button4 {border-radius: 12px;}
+
+            .btn-xl {
+            padding: 5px 60px;
+            font-size: 50px;
+            border-radius: 10px;
+        }
+
+
+
+
+
+nav
+{
+    overflow: visible;
+}
+
+#backgroundimage {
+    background-image:  url("{% static "img/proaqc_login970.png" %}");
+    display: inline-block;
+    width: 100%;
+
+    line-height: 0;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+
+}
+
+.background-image {
+    {#background-image:  url("{% static "img/proaqc_login970.png" %}");#}
+    background-image:  url("{% static "img/phantoms_header.png" %}");
+    display: inline-block;
+    width: 100%;
+
+    line-height: 0;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+
+}
+
+
+
+    #image-inner {
+    display: block;
+    height: 0;
+    padding-top: 63.3%;
+}
+
+   .main-img{
+       {#background-image: url({% static "img/proaqc_login_h600_s.png" %});#}
+       background-image: url({% static "img/proact_header_image_HR@0.3x.jpg" %});
+       display: inline-block;
+    width: 100%;
+
+    line-height: 0;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+   }
+
+
+
+    .footpic {
+
+
+
+
+}
+
+/* default screen, non-retina */
+ #backgroundimage { background-image: url("{% static "img/proaqc_login_shoulder.png" %}"); }
+
+
+@media only screen and (max-width: 640px) {
+    /* Medium screen, non-retina */
+    #backgroundimage { background-image: url("{% static "img/proaqc_login5383.png" %}"); }
+    .footpic { background-image: url("{% static "img/proaqc_login5383.png" %}"); }
+}
+@media
+only screen and  (min-width: 857px) and (max-width: 1245px) {
+    /* Medium screen, retina */
+    #backgroundimage { background-image: url("{% static "img/proaqc_login_3.png" %}"); }
+
+
+}
+
+@media
+only screen and  (min-width: 640px) and (max-width: 857px) {
+    /* Medium screen, retina */
+    #backgroundimage { background-image: url("{% static "img/proaqc_login_low2.png" %}"); }
+
+
+}
+
+@media
+only screen and (min-resolution: 2dppx) and (min-width: 641px) {
+    /* Large screen, retina */
+    .hero #cafe { background-image: url("{% static "img/proaqc_login_3.png" %}"); }
+}
+
+
+
+
+
+.custom-input {
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 27px;
+  font-family: 'Raleway', sans-serif;
+  height: 72px;
+  width: 99.5%;
+  margin-bottom: 10px;
+  opacity: 1;
+  text-indent: 20px;
+  transition: all .2s ease-in-out;
+}
+.custom-button {
+  background: #079BCF;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-size: 27px;
+  height: 72px;
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all .3s cubic-bezier(.6,0,.4,1);
+}
+.custom-button span {
+  display: block;
+  line-height: 72px;
+  position: relative;
+  top: -2px;
+  transform: translate3d(0,0,0);
+}
+.custom-button:hover {
+  background: #007BA5;
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+}
+
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column {
+  float: right;
+  width: 50%;
+  padding: 50px;
+  text-align: right;
+    margin-left: 20px;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+
+.column_left {
+  float: left;
+  width: 50%;
+  padding: 50px;
+  text-align: left;
+    margin-left: 20px;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+
+.main-img-2{
+       background-image: url({% static "img/radsetta_banner_8.jpg" %});
+       display: inline-block;
+    width: 100%;
+
+    line-height: 0;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+   }
+
+.main-img-3{
+       background-image: url({% static "img/dash_2.png.png" %});
+       display: inline-block;
+    width: 100%;
+
+    line-height: 0;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+   }
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column-us {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+
+}
+
+@media screen and (max-width: 650px) {
+  .column-us {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card-us {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+
+}
+
+.container-us {
+  padding: 0 16px;
+}
+
+.container-us::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title-us {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.alignleft {
+    float: left;
+    text-align:left;
+    width:33.33333%;
+}
+.aligncenter {
+    float: left;
+    text-align:center;
+    width:33.33333%;
+}
+.alignright {
+    float: left;
+    text-align:right;
+    width:33.33333%;
+}
+
+ul.b {
+  list-style-type: square;
+    font-size: larger;
+}
+
+ul.c {
+  list-style-type: square;
+
+}
+
+
+
+</style>
+
+<link rel="stylesheet" href="{% static "css/login_page.css" %}" >
+{#<link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" >#}
+{#<link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.css' %}">#}
+{#<link rel="stylesheet" href="{% static "css/sb-admin2.css" %}" >#}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+
+
+
+<!-- Custom fonts for this template-->
+<link rel="stylesheet" href="{% static "vendor/fontawesome-free/css/all.min.css" %}" >
+
+<!--====== Favicon Icon ======-->
+    <link rel="shortcut icon"  href="{%  static "img/QC_tm.png" %}">
+
+
+<!-- Page level plugin CSS-->
+{#<link rel="stylesheet" href="{% static "vendor/datatables/dataTables.bootstrap4.css" %}" >#}
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+
+<link href='https://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed' rel='stylesheet' type='text/css'>
+
+<!--====== Line Icons css ======-->
+
+<link rel="stylesheet" href="{%  static "assets/css/LineIcons.css" %}">
+
+    <!--====== Magnific Popup css ======-->
+<link rel="stylesheet" href="{%  static "assets/css/magnific-popup.css" %}">
+
+<!--====== Slick css ======-->
+<link rel="stylesheet" href="{%  static "assets/css/slick.css" %}">
+
+<!--====== Animate css ======-->
+<link rel="stylesheet" href="{%  static "assets/css/animate.css" %}">
+
+<!--====== Default css ======-->
+<link rel="stylesheet" href="{%  static "assets/css/default.css" %}">
+
+<!--====== Style css ======-->
+<link rel="stylesheet" href="{%  static "assets/css/style.css" %}">
+
+
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+
+
+<!--====== PRELOADER PART START ======-->
+
+{% comment %}    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>{% endcomment %}
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+
+{% if form.errors %}
+    {% for field in form %}
+        {% for error in field.errors %}
+            <div class="alert alert-danger">
+                <strong>Your username and password didn't match. Please try again.</strong>
+            </div>
+        {% endfor %}
+    {% endfor %}
+    {% for error in form.non_field_errors %}
+        <div class="alert alert-danger">
+            <strong>
+                <div class="row" style="margin-left: 10%;">
+                    Your username and password didn't match. Please try again.
+                </div>
+                <div class="row" style="margin-left: 10%;">
+                    <a  href="{% url 'password_reset' %}">Forgot account?</a>
+                </div>
+
+            </strong>
+        </div>
+    {% endfor %}
+{% endif %}
+
+
+
+
+  <body id="page-top">
+
+ {% comment %} <nav class="navbar navbar-expand navbar-dark blue-bg static-top" >
+
+      <a  href="{% url 'login' %}" class="logo"><span class=""><img id="logo_img"  src={% static "img/ProAQCT_logo_tm.png" %} height="60px">
+      <img id="logo_2"  src={% static "img/logo_new_tm.png" %} ></span></a>
+
+      <ul class="nav navbar-nav ">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle acc4 " href="#" id="works" data-toggle="dropdown">
+                  Why ProAqCT <sup>TM</sup> ?
+              </a>
+              <div class="dropdown-menu" >
+                  <a class="dropdown-item" href="{% url 'login' %}#about">About</a>
+
+                  <a class="dropdown-item" href="{% url 'login' %}#about-sub">QC is in our name</a>
+
+{#                  <a class="dropdown-item" href="#">FAQ</a>#}
+{#                  <a class="dropdown-item" href="#">Customer Stories</a>#}
+              </div>
+          </li>
+
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle acc4 " href="#" id="works" data-toggle="dropdown">
+                  Explore
+              </a>
+              <div class="dropdown-menu" >
+{#                  <a class="dropdown-item" href="{% url 'login' %}#apps">Our Informatics Solutions</a>#}
+                  <a class="dropdown-item" href="{% url 'dose-info' %}#about-sub">Features</a>
+                  <a class="dropdown-item" href="{% url 'login' %}#contact">Request a Demo</a>
+
+
+              </div>
+          </li>
+
+
+
+
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle acc4 " href="#" id="works" data-toggle="dropdown">
+                  Pricing
+              </a>
+              <div class="dropdown-menu" >
+                  <a class="dropdown-item" href="#">Plans</a>
+                  <a class="dropdown-item" href="#">Contact Sales</a>
+
+              </div>
+          </li>
+
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle acc4 " href="#" id="works" data-toggle="dropdown">
+                  About Us
+              </a>
+
+              <div class="dropdown-menu" >
+                  <a class="dropdown-item" href="{% url 'story' %}" >Why Quality Matters to Us</a>
+                  <a class="dropdown-item" href="{% url 'about-us' %}" >ProAqCT<sup>TM</sup> Team</a>
+
+
+
+                  <a class="dropdown-item" href="#">Clincal Support</a>
+                  <a class="dropdown-item" href="#">Partners</a>
+              </div>
+          </li>
+
+          <li class="nav-item dropdown">
+              <a class="nav-link  acc4 "href="{% url 'login' %}#contact" id="works" >
+                  Contact Us
+              </a>
+
+
+          </li>
+
+
+
+
+
+      </ul>
+
+      <a  href="" class="acc2" id="works">How it works</a>
+      <a  href="" class="acc2" id="works">Explore</a>
+      <a  href="" class="acc2" id="works">Pricing</a>
+      <a  href="" class="acc2" id="works">About us</a>
+
+      <!-- Navbar Search -->
+      <div class=" form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+
+          <form method="post" class="form-horizontal" action="{% url 'login' %}">
+              {% csrf_token %}
+
+
+
+
+              <div class="form-group form-row">
+                  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                  <input type="text" class="form-control" name="username" required id="id_username">
+                  <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                  <input type="password" class="form-control" name="password" required id="id_password">
+
+
+                  <input class="but " type="submit" value="Sign In" />
+                  <input type="hidden" name="next" value="{{ next }}" />
+              </div>
+
+              <a class="acc" href="{% url 'password_reset' %}">Forgot account?</a>
+
+
+
+
+
+          </form>
+
+
+      </div>
+
+
+
+
+      <div class="navbar-btn d-none mt-15 d-lg-inline-block">
+          <a class="menu-bar" href="#side-menu-right"><i class="fas fa-bars" style="color: white"></i></a>
+      </div>
+
+       <div id="bars_2" >
+
+          <a class="menu-bar" href="#side-menu-right"><i class="fas fa-bars" style="color: white"></i></a>
+      </div>
+
+
+
+
+
+  </nav>{% endcomment %}
+
+
+
+ <!-- Basic Page Needs
+        ================================================== -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Specific Meta
+        ================================================== -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+
+    <!-- Titles
+        ================================================== -->
+    <title>ProAqCT - Leading QC Solution for Diagnosis and Imaging</title>
+
+    <!-- Favicons
+        ================================================== -->
+
+
+    <link rel="icon" href={% static "Landing_Page/assets/images/favicon.png" %} />
+    <!-- <link rel="apple-touch-icon" sizes="72x72" href="assets/images/android-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-144x144.png"> -->
+
+    <!-- Custom Font
+        ================================================== -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS
+        ================================================== -->
+
+      <link rel="stylesheet" href="{% static "Landing_Page/assets/css/bootstrap.min.css" %}" />
+      <link rel="stylesheet" href="{% static "Landing_Page/assets/css/magnific-popup.css" %}" />
+      <link rel="stylesheet" href="{% static "Landing_Page/assets/css/owl.carousel.min.css" %}" />
+      <link rel="stylesheet" href="{% static "Landing_Page/assets/css/magnific-popup.css" %}" />
+      <link rel="stylesheet" href="{% static "Landing_Page/assets/css/simple-scrollbar.css" %}" />
+      <link rel="stylesheet" href="{% static "Landing_Page/assets/css/odometer-theme-default.css" %}" />
+      <link rel="stylesheet" href="{% static "Landing_Page/assets/css/fontawesome.all.min.css" %}" />
+      <link rel="stylesheet" href="{% static "Landing_Page/assets/css/fontawesome.min.css" %}" />
+      <link rel="stylesheet" href="{% static "Landing_Page/assets/css/icomoon.css" %}" />
+      <link rel="stylesheet" href="{% static "Landing_Page/assets/css/style.css" %}" />
+      <link rel="stylesheet" href="{% static "Landing_Page/assets/css/cx-styles.css" %}" />
+
+
+
+
+
+
+
+
+
+
+      <script src="{% static 'Landing_Page/assets/js/modernizr.min.js' %}"></script>
+
+
+  </head>
+  <body data-spy="scroll" data-offset="170" data-target=".navigation-area">
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Preloader
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-icon">
+          <span></span>
+          <span></span>
+        </div>
+        <!-- /preloader-icon -->
+      </div>
+      <!-- /preloader-inner -->
+    </div>
+    <!-- /preloader -->
+
+    <!--********************************************************-->
+    <!--********************* SITE CONTENT *********************-->
+    <!--********************************************************-->
+    <div class="site-content">
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Start Site Header
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <header class="site-header default-header-style">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="navigation-area">
+                <!-- Site Branding -->
+                <div class="site-branding">
+
+                    <a  href="{% url 'login' %}" class="logo">
+                        <span class=""><img id="logo_img"  src={% static "img/ProAQCT_logo_tm.png" %} height="100px">
+                            </span></a>
+
+
+                </div>
+
+                  <div class="mobile-show text-center" style="float: left"  >
+
+                      <a href="{% url 'login' %}"><img  src={% static "Landing_Page/assets/images/favicon.png" %} alt="Logo" width="80" ></a>
+                  </div>
+
+                <!--  /.site-branding -->
+
+                <!-- Site Navigation -->
+                <div class="site-navigation">
+
+
+                  <div class="hamburger-menus">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <nav class="navigation">
+                    <div class="overlaybg"></div>
+                    <!--  /.overlaybg -->
+                    <!-- Main Menu -->
+                    <div class="menu-wrapper">
+                      <div class="menu-content">
+
+                        <ul class="mainmenu">
+                          <li>
+                            <a class="nav-link active" style="font-size: larger" href="{% url 'login' %}">Home</a>
+                          </li>
+                          <li>
+                            <a class="nav-link" style="font-size: larger" href="{% url 'features_' %}">Features</a>
+                          </li>
+                          <li>
+                            <a class="nav-link" style="font-size: larger" href="{% url 'story' %}">About</a>
+                          </li>
+                          <li>
+                            <a class="nav-link" style="font-size: larger" href="{% url 'contact' %}">Contact</a>
+                          </li>
+                            <li>
+
+                            <a class="nav-link" style="font-size: larger" href="{% url 'contact' %}#more-info">Request Demo or Free Trial</a>
+                          </li>
+
+
+                        </ul>
+                        <!-- /.menu-list -->
+                      </div>
+                      <!-- /.hours-content-->
+                    </div>
+                    <!-- /.menu-wrapper -->
+                  </nav>
+                </div>
+                <!--  /.site-navigation -->
+
+                <div class="header-navigation-right">
+
+
+
+
+                  <div class="lets-talk-area">
+                    <a class="btn btn-default" href="#" data-toggle="modal" data-target="#logoutModal">Sign In</a>
+                  </div>
+                  <!--~./ lets-talk-area ~-->
+                </div>
+                <!--~./ header-navigation-right ~-->
+              </div>
+              <!--  /.navigation-area -->
+            </div>
+            <!--  /.col-12 -->
+          </div>
+          <!--  /.row -->
+        </div>
+        <!--  /.container-fluid -->
+      </header>
+      <!--~~./ end site header ~~-->
+      <!--~~~ Sticky Header ~~~-->
+      <div id="sticky-header"></div>
+      <!--~./ end sticky header ~-->
+
+
+
+    <!--====== SAIDEBAR PART ENDS ======-->
+
+{% block content %}{% endblock %}
+
+
+  {% comment %}<div id="lowerimage">
+      <img   src={% static "img/proaqc_login290.png" %} width= 100%>
+  </div>{% endcomment %}
+
+<!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+{#            <h5 class="modal-title" id="exampleModalLabel">SIGN IN</h5>#}
+
+{#              <h5 style="text-align: center" class="modal-title" id="exampleModalLabel">SIGN IN</h5>#}
+            {% comment %}<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>{% endcomment %}
+
+              <img class="img-center" src={% static "Landing_Page/assets/images/favicon.png" %} alt="Logo" width="150" >
+
+          </div>
+
+            <div class="modal-body">
+                <form action="" method="post">{% csrf_token %}
+
+
+
+                    <div >
+
+                        <input class="custom-input" name="username" required="" id="id_username" placeholder='Email' type='text'>
+
+                        <input class="custom-input" name="password" required="" id="id_password" placeholder='Password' type='password'>
+
+
+                    </div>
+                    <button class="custom-button" type='submit'>
+    <span>
+
+      Sign in
+
+    </span>
+                    </button>
+                </form>
+            </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Call To Action
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <div class="call-to-action bg-center" style="background-image: url({% static "Landing_Page/assets/images/bg/map2.png" %});">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-8" data-animate="hg-fadeInUp" data-duration="1.0s" data-offset="100">
+                      <h2 class="call-to-title">Lets talk about your imaging program and how we can make it better with  <span>ProAqCT</span> </h2><!-- /.call-to-title -->
+                      <div class="action-btn-group pd-t-50">
+                          <a href="{% url 'contact' %}#more-info" class="btn btn-default btn-primary">Request a Demo</a>
+                          <a href="{% url 'contact' %}" class="btn btn-default">Let's Talk</a>
+                      </div><!-- /.action-btn-group -->
+                  </div><!-- /.col-lg-8 -->
+              </div><!-- /.row -->
+          </div><!-- /.container -->
+      </div><!--~~./ end call to action ~~-->
+
+
+
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start SITE FOOTER
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <footer class="site-footer footer-style-one pd-b-20">
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Start Footer Widget Area
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div class="footer-widget-area">
+                <div class="container">
+                    <div class="row">
+                        <!--~~~~~ Start Widget Links ~~~~~-->
+                        <div class="col-lg-3">
+                            <aside class="widget bt-about-footer-widget">
+                                <div class="widget-content">
+                                    <div class="about-logo">
+                                        <a href="{% url 'login' %}">
+                                            <img src={% static "Landing_Page/assets/images/favicon.png" %} alt="Logo" width="150" >
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div><!--~./ end links widget ~-->
+
+                        <!--~~~~~ Start Widget Links ~~~~~-->
+                        <div class="col-lg-3">
+                            <aside class="widget widget_links">
+                                <h2 class="widget-title">Quick Links</h2>
+                                <div class="widget-content">
+                                    <ul>
+                                        <li><a href="{% url 'login' %}">Home</a></li>
+                                        <li><a href="{% url 'features_' %}">Features</a></li>
+                                        <li><a href="{% url 'story' %}">About</a></li>
+                                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                                        <li><a href="{% url 'contact' %}#more-info">Request Demo/Free Trial</a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div><!--~./ end links widget ~-->
+
+                        <!--~~~~~ Start Widget Links ~~~~~-->
+                        <div class="col-lg-3">
+                            <aside class="widget widget_links">
+                                <h2 class="widget-title">Support</h2>
+                                <div class="widget-content">
+                                    <ul>
+                                        <li><a href="#">Frequently Questions</a></li>
+                                        <li><a href="#">Terms Of Use</a></li>
+                                        <li><a href="#">Policy Privacy</a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div><!--~./ end links widget ~-->
+
+                        <!--~~~~~ Start Widget Social Share ~~~~~-->
+                        <div class="col-lg-3">
+                            <aside class="widget social-share-widget">
+                                <h2 class="widget-title">Follow Us</h2>
+                                <div class="widget-content">
+                                    <ul class="footer-social">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul><!--  /.footer-social -->
+                                </div>
+                            </aside>
+                        </div><!--~./ end social share widget ~-->
+                    </div>
+                </div>
+            </div><!--~./ end footer widgets area ~-->
+        </footer>
+        <!--~./ end site footer ~-->
+
+
+
+
+<!--====== jquery js ======-->
+
+
+
+
+
+
+
+
+
+
+    <script src="{% static 'assets/js/vendor/modernizr-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+
+    <!--====== Bootstrap js ======-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+
+    <!--====== Isotope js ======-->
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+
+    <!--====== Images Loaded js ======-->
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+
+    <!--====== Scrolling js ======-->
+    <script src="{% static 'assets/js/scrolling-nav.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+
+    <!--====== wow js ======-->
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+
+    <!--====== Main js ======-->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+
+    <!--~~./ end site content ~~-->
+
+    <!-- All The JS Files
+    ================================================== -->
+    <script src="{% static 'Landing_Page/assets/js/jquery.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/jquery-validate.bootstrap-tooltip.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/slick.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/theia-sticky-sidebar.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/ResizeSensor.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/packery-mode.pkgd.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/jquery.fitvids.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/simple-scrollbar.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/scrolla.jquery.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/odometer.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/TweenMax.min.js' %}"></script>
+    <script src="{% static 'Landing_Page/assets/js/main.js' %}"></script>
+
+
+    <!--====== Bootstrap js ======-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+<script>
+
+width  = window.innerWidth || document.documentElement.clientWidth ||
+document.body.clientWidth;
+ height = window.innerHeight|| document.documentElement.clientHeight||
+document.body.clientHeight;
+
+console.log(width, height);
+console.log($("#id_qc").is(":checked"))
+
+
+
+
+
+
+
+
+
+</script>
+
+
