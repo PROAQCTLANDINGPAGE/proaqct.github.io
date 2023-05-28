@@ -3615,7 +3615,7 @@ body:not(.buddypress) .article-content table th {
 
 .site-content {
   background-color: white;
-  background-image: url("../images/bg/bg-main.png");
+  /*background-image: url("../images/bg/bg-main.png");*/
   background-position: center top;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -3623,23 +3623,23 @@ body:not(.buddypress) .article-content table th {
   overflow: hidden;
 }
 .site-content.home-one {
-  background-image: url("../images/bg/bg-home1.png");
+  /*background-image: url("../images/bg/bg-home1.png");*/
 }
 .site-content.home-two {
   background-image: url("../images/bg/bg-home2.png");
 }
 .site-content.home-three {
-  background-image: url("../images/bg/bg-home3.png");
+  /*background-image: url("../images/bg/bg-home3.png");*/
 }
 .site-content.home-four {
-  background-image: url("../images/bg/bg-home4.png");
+  /*background-image: url("../images/bg/bg-home4.png");*/
 }
 .site-content.home-five {
-  background-image: url("../images/bg/bg-home5.png");
+  /*background-image: url("../images/bg/bg-home5.png");*/
   background-color: #1d1556;
 }
 .site-content.home-six {
-  background-image: url("../images/bg/bg-home6.png");
+  /*background-image: url("../images/bg/bg-home6.png");*/
   background-color: #352793;
 }
 
