@@ -10,8 +10,8 @@ Version: 1.0
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Typography 
-    [ ## Heading ] 
+# Typography
+    [ ## Heading ]
     [ ## Others Typography ]
 # Elements
     [ ## Font Size ]
@@ -38,7 +38,7 @@ Version: 1.0
 	[ ## Captions ]
 	[ ## Galleries ]
 	[ ## media ]
-# Modules 
+# Modules
 	[ ## Accessibility ]
 	[ ## Alignments ]
 	[ ## Clearings ]
@@ -4437,10 +4437,11 @@ object {
 .preloader-icon span {
   position: absolute;
   display: inline-block;
-  width: 72px;
-  height: 72px;
-  border-radius: 100%;
-  background-color: #26e3a9;
+  width: 188px;
+  height: 188px;
+  background: url('../images/qc_loader.gif');
+  /*border-radius: 100%;*/
+  /*background-color: #26e3a9;*/
   -webkit-animation: preloader-fx 1.5s linear infinite;
   animation: preloader-fx 1.5s linear infinite;
 }

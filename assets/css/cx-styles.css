@@ -88,7 +88,7 @@ color: #fff !important;
 
 #sticky-header .site-header{
     background-color: #2980B9 !important;
-    padding: 0 !important; 
+    padding: 0 !important;
 }
 
 #service-block::after, .feature-body::before {
@@ -140,7 +140,7 @@ color: #fff !important;
 }
 
 #carousel1 {
-    background-image: url('../images/slide1.jpg');
+    background-image: url('../images/slide_3.jpg');
     background-position: center center;
     background-size: cover;
 }
@@ -154,6 +154,30 @@ color: #fff !important;
 .background-overlay {
     background: rgba(23,144,208,.2);
     background-image: radial-gradient(circle at left bottom,#000 0,rgba(23,144,208,0) 70%),radial-gradient(circle at left bottom,rgba(23,144,208,.5) 0,rgba(23,144,208,0) 70%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+.background-overlay-2 {
+    background: rgba(23,144,208,.2);
+    background-image: radial-gradient(circle at left bottom,#63c4d7 0,rgba(23,144,208,0) 70%),radial-gradient(circle at left bottom,rgba(23,144,208,.5) 0,rgba(23,144,208,0) 70%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+.background-overlay-3 {
+    background: rgba(23,144,208,.2);
+    background-image: radial-gradient(circle at left bottom,#d1e9f6 0,rgba(23,144,208,0) 70%),radial-gradient(circle at left bottom,rgba(23,144,208,.5) 0,rgba(23,144,208,0) 70%);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -178,6 +202,45 @@ color: #fff !important;
 
 #carousel2 {
     background-image: url('../images/slide2.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#carousel3 {
+    /*background-image: url('../images/mapping_14.jpg');*/
+    background-image: url('../images/mapping.jpg');
+
+    background-position: center center;
+    background-size: cover;
+}
+
+#carousel4 {
+    background-image: url('../images/PSD.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#carousel5 {
+    background-image: url('../images/NCI_phantoms.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#carousel6 {
+    background-image: url('../images/slide_6.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#carousel7 {
+    background-image: url('../images/meetings.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#carousel8 {
+    background-image: url('../images/NM_cover.JPG');
     background-position: center center;
     background-size: cover;
 }

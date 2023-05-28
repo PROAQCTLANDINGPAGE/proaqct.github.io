@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+{% extends "base_generic_login.html" %}
+{% load static %}
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+
+
+{% block content %}
+
+    <style>
+        @media screen and (max-width: 650px) {
+            .column-us {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+
+    </style>
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+    <body id="page-top">
+
+    <br>
+<div class="container-xl" style="max-width: 100%; text-align: center">
+
+        <div class="inner align-cente">
+            <h2>Meet our Team! </h2>
+
+            <p>
+
+            </p>
+
+        </div>
+
+</div>
+
+    <br>
+
+
+
+
+
+<div class="container-xl" style="max-width: 100%">
+
+    <div class="row">
+        <div class="column-us">
+            <div class="card-us">
+                <img src={% static "img/larry_pic.jpg" %} alt="Larry" style="width:100%">
+                <div class="container-us">
+                    <h2>Larry Cumberbatch Ph.D</h2>
+                    <p class="title-us">CEO </p>
+                    <p>Dr. Cumberbatch is a Medical Physicist with over 10 years of clinical experience. He earned his
+                        Ph. D from Duke University and did his post-doctoral training in machine learning.
+                        Having worked with all commercially available Dose Management systems, Dr. Cumberbatch saw an
+                        immediate need to improve patient dose management and make it smarter and easier to use.
+                        Thanks to his leadership and experience, ProAQCT is the most advanced and user-friendly dose
+                        management and imaging informatics solution on the market.</p>
+                    <br>
+
+
+                    <p>
+                        <a href = "mailto: larry@proaqct.com" class="button">Contact Larry
+                        </a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column-us">
+            <div class="card-us">
+                <img src={% static "img/MH.jpg" %} alt="Mel" style="width:100%">
+                <div class="container-us">
+                    <h2>Mel Hebert MS</h2>
+                    <p class="title-us">VP of Sales</p>
+                    <p>Mr. Hebert is a Health Physicist with over 30 years of experience in Nuclear and Radiation Safety.
+                        Mel possesses a comprehensive background in regulatory compliance and Radiation Safety derived
+                        from serving in state and federal Agencies as a Radiation Safety Officer. He oversees the
+                        ProAQCT regulatory compliance program and ensures that ProAQCT meets all QC and radiation dose
+                        monitoring guidelines. He also serves as our VP of sales and builds business strategies that
+                       position ProAQCT as the world's leading informatics solution. </p>
+
+                    <br>
+
+                    <p>
+                        <a href = "mailto: mel@proaqct.com" class="button">Contact Mel
+                        </a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column-us">
+            <div class="card-us">
+                <img src={% static "img/cruz.jpg" %} alt="Larry" style="width:100%">
+                <div class="container-us">
+                    <h2>Leah Cruz ARRT</h2>
+                    <p class="title-us">Application Specialist</p>
+                    <p>Mrs. Cruz is a ARRT certified CT technologist with over 20 years of clinical experience.  From the start
+                        of her career, Leah has made it her mission to reduce patient radiation exposure while providing
+                        the best imaging and care to patients. Her extensive experience with ALARA principals and patient
+                        dose management on all CT manufacturers make her an incredible clinical support specialist and resource for our users.
+
+
+                    </p>
+
+                    <br>
+                    <br>
+
+                    <p>
+                        <a href = "mailto: sales@proaqct.com" class="button">Contact Leah
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-us">
+            <div class="card-us">
+                <img src={% static "img/JPM.jpg" %} alt="JPM" style="width:100%">
+                <div class="container-us">
+                    <h2>Juan Pablo Montoya</h2>
+                    <p class="title-us">AI/ ML engineer</p>
+                    <p>Mr. Montoya is our lead Ml/AI developer and designs the deep learning algorithms in ProAQCT’s
+                        clinical image quality optimization engine. He’s an incredible resource for our clients that are
+                        interested in improving processes by way of big data and machine learning. His expertise in data
+                        science has been fundamental in ProAQCT’s mission to transform imaging operations in radiology.</p>
+
+                    <p>
+                        <a href = "mailto: admin@proaqct.com" class="button">Contact Juan Pablo
+                        </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column-us">
+            <div class="card-us">
+                <img src={% static "img/ct_tech.jpg" %} alt="Maritza" style="width:100%">
+                <div class="container-us">
+                    <h2>Maritza Ross</h2>
+                    <p class="title-us">Administrator Assistant</p>
+                    <p>Mrs. Ross is our incredible administrative assistant. When she is not taking calls or scheduling
+                        installations, she enjoys baking delicious cast-iron skillet cinnamon rolls. She takes great
+                        pride in providing timely and friendly customer support.</p>
+                    <br>
+                    <br>
+
+                    <p>
+                        <a href = "mailto: sales@proaqct.com" class="button">Contact Maritza
+                        </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column-us">
+            <div class="card-us">
+
+                <img src={% static "img/sm.jpg" %} alt="Steve" style="width:100%">
+                <div class="container-us">
+                    <h2>Steve Mathers</h2>
+                    <p class="title-us">IT & DICOM Support</p>
+                    <p>Mr. Mathers is our IT infrastructure team lead and coordinates the end-to-end installation of
+                        ProAQCT at each site. With over 17 years of healthcare IT experience, he ensures installation of
+                        ProAQCT IT infrastructure is fast and cost-effective. </p>
+                    <p>
+                        <br>
+                        <br>
+
+
+                        <a href = "mailto: sales@proaqct.com" class="button">Contact Steve
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+</div>
+    <br>
+
+
+    </body>
+</html>
+{% endblock %}

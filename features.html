@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+        ================================================== -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Specific Meta
+        ================================================== -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+
+    <!-- Titles
+        ================================================== -->
+    <title>ProAqCT - Quality Optimization </title>
+
+    <!-- Favicons
+        ================================================== -->
+    <link rel="icon" href="assets/images/favicon.png" />
+    <!-- <link rel="apple-touch-icon" sizes="72x72" href="assets/images/android-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-144x144.png"> -->
+
+    <!-- Custom Font
+        ================================================== -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS
+        ================================================== -->
+
+
+<!--    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/simple-scrollbar.css" />
+    <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.all.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/icomoon.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/cx-styles.css" />
+
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+      #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  /*z-index: 10; !* Sit on top *!*/
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  /*max-width: 700px;*/
+}
+
+.modal-content-jp {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index:999999;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 800px){
+  .modal-content {
+    width: 80%;
+  }
+}
+
+      @media (min-width: 992px) {
+        .modal-lg {
+          width: 900px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .modal-xl {
+          width: 100%;
+          max-width:1800px;
+        }
+      }
+
+
+
+    </style>
+
+    <script src="assets/js/modernizr.min.js"></script>
+  </head>
+  <body data-spy="scroll" data-offset="170" data-target=".navigation-area">
+
+
+
+    <!--********************************************************-->
+    <!--********************* SITE CONTENT *********************-->
+    <!--********************************************************-->
+    <div class="site-content">
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Start Site Header
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <header class="site-header default-header-style">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="navigation-area">
+                <!-- Site Branding -->
+                <div class="site-branding">
+                  <a href="index.html">
+                    <img src="assets/img/ProAQCT_logo_tm.png" alt="Site Logo" />
+                  </a>
+                </div>
+
+                <!--<div class="mobile-show text-center" style="float: left"  >
+
+                      <a href="index.html"><img src="assets/assets/images/favicon.png" alt="Logo" width="80"/></a>
+                  </div>-->
+                <!--  /.site-branding -->
+
+                <!-- Site Navigation -->
+                <div class="site-navigation">
+                  <div class="hamburger-menus">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <nav class="navigation">
+                    <div class="overlaybg"></div>
+                    <!--  /.overlaybg -->
+                    <!-- Main Menu -->
+                    <div class="menu-wrapper">
+                      <div class="menu-content">
+                        <ul class="mainmenu">
+                          <li>
+                            <a class="nav-link " style="font-size: larger" href="index.html"
+                              >Home</a
+                            >
+                          </li>
+                          <li>
+                            <a class="nav-link active" style="font-size: larger" href="features.html"
+                              >Features</a
+                            >
+                          </li>
+                          <li>
+                            <a class="nav-link" style="font-size: larger" href="our_story.html">About</a>
+                          </li>
+                          <li>
+                            <a class="nav-link" style="font-size: larger" href="contact.html">Contact</a>
+                          </li>
+                          <li>
+
+                            <a class="nav-link" style="font-size: larger" href="contact.html#more-info">Request Demo or Free Trial</a>
+                          </li>
+
+                        </ul>
+                        <!-- /.menu-list -->
+                      </div>
+                      <!-- /.hours-content-->
+                    </div>
+                    <!-- /.menu-wrapper -->
+                  </nav>
+                </div>
+                <!--  /.site-navigation -->
+
+                <div class="header-navigation-right">
+
+                  <!--~./ lets-talk-area ~-->
+                </div>
+                <!--~./ header-navigation-right ~-->
+              </div>
+              <!--  /.navigation-area -->
+            </div>
+            <!--  /.col-12 -->
+          </div>
+          <!--  /.row -->
+        </div>
+        <!--  /.container-fluid -->
+      </header>
+      <!--~~./ end site header ~~-->
+      <!--~~~ Sticky Header ~~~-->
+      <div id="sticky-header"></div>
+      <!--~./ end sticky header ~-->
+
+
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Page Title Area
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <div class="page-title-area">
+        <div class="svg-shape-left">
+          <!-- <img src="assets/images/shape/left.png" alt="img"> -->
+        </div>
+        <!--~~./ svg-shape-left ~~-->
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8 pd-t-60">
+              <div class="page-header-content">
+                <div class="page-header-caption">
+                  <h2 class="page-title">Features of <span>ProAqCT</span></h2>
+                </div>
+                <div class="breadcrumb-area">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active">Features</li>
+                  </ol>
+                </div>
+                <!--~~./ breadcrumb-area ~~-->
+              </div>
+              <!--~~./ page-header-content ~~-->
+            </div>
+            <div class="col-md-4">
+              <div class="page-header-thumb">
+                <!-- <img src="assets/images/header/7.png" alt="img"> -->
+              </div>
+              <!--~~./ page-header-thumb ~~-->
+            </div>
+          </div>
+        </div>
+        <!--~~./ end container ~~-->
+      </div>
+      <!--~~./ end page title area ~~-->
+
+
+      <div id="about-block" class="about-us-block mrb-190">
+        <div class="container">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+
+
+              <img src="assets/images/proact_header_image_HR@0.3x.jpg"
+
+
+                alt="Features Image Not Found"
+                class="features-img"
+                style="width: 550px ;"
+              />
+            </div>
+            <div class="col-lg-5">
+              <div class="section-title">
+                <h2 class="title-main">Premium Features</h2>
+                <!-- /.title-main -->
+              </div>
+
+
+                    <ul class="b">
+                        <a href="features.html#id_it"><li>Vendor Agnostic Dose Monitoring Installation</li></a>
+                        <a href="features.html#iq"><li>Automated Image Quality Monitoring</li></a>
+                        <a href="features.html#mapping"><li>Automated & Accurate Protocol Maps</li></a>
+                        <a href="features.html#ct-dose"><li>Simplified Alert Notification Review</li></a>
+                        <a href="features.html#benchmarks"><li>Local & National Dose Benchmarking</li></a>
+                        <a href="features.html#ct_data"><li>Data insights that lead to Quality Improvements</li></a>
+                        <a href="features.html#lp"><li>Realtime LeapFrog & Pediatric Dose Monitoring</li></a>
+                        <a href="features.html#dose"><li>Patient Specific Organ Dosimetery</li></a>
+                        <a href="features.html#fetal"><li>Fetal Organ Dose per gestational age</li></a>
+                        <a href="features.html#PSD"><li>3D Peak Skin Dose Maps for Fluoroscopy</li></a>
+                        <a href="features.html#fl_insights"><li>Fluoro Exam Insights</li></a>
+                        <a href="features.html#fl_al"><li>Fluoro Alert Notifications</li></a>
+                        <a href="features.html#NM"><li>Nuclear Medicine Dose Monitoring</li></a>
+
+
+
+                        <a href="physics_support.html"><li>Automated Reports & Physics Support</li></a>
+                        <a href="features.html#qc"><li>Automated QC for CT phantoms</li></a>
+
+
+                    </ul>
+
+
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.features-block -->
+
+
+
+
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Features Section 1
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <div id="id_it" class="about-us-block mrb-190">
+        <div class="container" >
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="mock-up-thumb reveal-right in">
+
+                <img id="myImg" style="width: 800px ;" src="assets/images/features/proAQCT_architecture_no_hl7 (3).png"
+                     alt="The ProAqCT DICOM node supports the storage service of DICOM data and listens for association
+                     requests made from modalities/imaging stations and/or PACS. Data from the ProAqCT DICOM node is
+                     stored in ProAqCTs central server. The ProAqCT central server transmits email notifications to
+                     users via the simple mail transfer protocol (SMPT). National patient dose reference data is
+                     transmitted via RESTful API with the American College of Radiology (ACR) dose index registry (DIR).
+                     All servers depicted (dotted blue box) reside behind the institution’s firewall. " />
+              </div>
+
+              <div style="text-align: center">
+                <p>Click me to learn more!</p>
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6">
+              <div class="section-title">
+                <h2 class="title-main" >Fast & Easy Installation</h2>
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p> ProAqCT is vendor agnostic Dose Monitoring system compatible with all CT, Fluoroscopy, PET, and nuclear medicine vendors. </p>
+                <p class="description mrb-55">
+                    One of the many ways ProAqCT offers an
+                    affordable dose management solution is
+                    with a light IT footprint. Because
+                    ProAqCT runs in an OS-level virtual
+                    container, it can be remotely deployed
+                    behind the network firewall on a virtual
+                    server or a physical machine.
+                    <br>
+                    <br>
+                    We also
+                    offer deployment on a HIPPA compliant
+                    AWS cloud service. The cloud service eliminates
+                    the need for costly server hardware on-site as
+                    well as organizational IT resources. AWS expertly
+                    supports all server maintenance to relieve your organization's IT burden.
+                    <br />
+                    <br>
+                    Our team of IT specialists provide all
+                    necessary technical resources and work
+                    with your organization to deliver fast and
+                    expert end-to-end installation.
+                </p>
+              </div>
+              <!-- /.about-content -->
+            </div>
+            <!-- /.col-lg-5 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!--~~./ end features block ~~-->
+
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Features Section 2
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <div id="about-block" class="about-us-block mrb-190">
+        <div class="container" id="iq">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6 order-lg-1 order-md-2 order-sm-2 order-xs-2">
+              <div class="section-title">
+                <h2 class="title-main" >Optimial Image Quality at the Lowest Dose!</h2>
+                  <h4> Track & Optimize Scanner Image Quality with Automated Image Quality Monitoring </h4>
+
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+                    ProAqCT ensures optimal imaging at the lowest doses by automatically monitoring clinical image quality in addition to patient dose.
+                    Using machine learning, ProAqCT performs objective image quality measurements on patient scans and
+                    trends image quality vs dose. This allows users to benchmark image quality metrics vs. dose across different
+                    scanners per protocol, standardize protocols, and maximize quality in a patient-specific manner.
+
+                    <br>
+                    <br>
+                    Objective Image quality metrics, such as average noise,
+                    can be compared across scanner protocols. Our Image
+                    Quality analytics are designed to provide insights into
+                    protocol and scanner performance that lead to more
+                    optimal and standard imaging practices.
+
+                </p>
+              </div>
+              <!-- /.about-content -->
+            </div>
+
+            <div class="col-lg-6 order-lg-2 order-md-1 order-sm-1 order-xs-1 text-right">
+              <div class="mock-up-thumb reveal-right in">
+                  <img id="myImg1" style="width: 800px ;" src="assets/images/IQ_analysis.png"
+                       alt="Users can easily compare performance of an exam/procedure between sites and scanners and
+                       drill down to the scanner protocol level to identify variances in performance.
+                       Starting with the exam/procedure, users can compare mean doses and image quality across various sites.
+                       Users can drill down by clicking the column of the bar graph to see the breakdown across
+                       scanners within that site. Doses and image quality can be drilled down even further by clicking the
+                       scanner column and seeing the dose breakdown by scanner protocol.
+                       Dropdowns on each plot allow users to change the quality index used for the drill down analysis." />
+
+
+              </div>
+              <div style="text-align: center">
+                <p>Click me to learn more!</p>
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+
+
+
+
+
+      <!--~~./ end features block ~~-->
+
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Features Section 3
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+      <!--~~./ end features block ~~-->
+
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Features Section 4
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <div id="mapping"></div>
+
+      <div  class="about-us-block mrb-190">
+        <div class="container" >
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="mock-up-thumb reveal-right in">
+<!--                <a id = "pop" href=""><span><img src="assets/images/mapping_2.png" alt=""></span> </a>-->
+<!--                <button type = "button" class = "btn btn-lg" data-toggle = "modal" data-target="#new">Result</button>-->
+                <img id="mapping-img"  src="assets/images/mapping_module.JPG"  />
+              </div>
+              <div style="text-align: center">
+                <p>Click me to learn more!</p>
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6">
+              <div class="section-title">
+                <h2 class="title-main" id="id_it">Automated Protocol Mapping</h2>
+
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+                    ProAqCT uses machine learning to precisely map protocols to Radlex or any other lexicon.
+                    A mapping score, indicating the accuracy of the mapping selection, is provided for each mapped exam.
+                    When mapping accuracy falls below 90%, users receive alert notifications so that the mapping can be
+                    verified. This powerful mapping technique improves dose data analysis and prevents alert fatigue by
+                    reducing the number of false positive alerts.
+                </p>
+              </div>
+              <!-- /.about-content -->
+            </div>
+            <!-- /.col-lg-5 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Features Section 6
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <div id="ct-dose" class="about-us-block mrb-190">
+        <div class="container">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6 order-lg-1 order-md-2 order-sm-2">
+              <div class="section-title">
+                <h2 class="title-main">Simplified Patient Dose Review</h2>
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+                    ProAqCT makes it easy to review patient doses. A summary of dose indices
+                    that exceed alert thresholds is clearly provided with each exam. The
+                    patient AP and Lateral dimensions are automatically determined from
+                    axial slice data to give accurate measurements of the patient’s effective
+                    diameter and water equivalent diameter (WED). Patient scan length and
+                    iso-centering data are also provided to facilitate the review of patient
+                    dose.
+                </p>
+              </div>
+              <!-- /.about-content -->
+            </div>
+
+            <div class="col-lg-6 order-lg-2 order-md-1 order-sm-1 text-right">
+              <div class="mock-up-thumb reveal-right in">
+                  <img id="myImg_dose_review" style="width: 120%" src="assets/images/Alert_review.JPG"
+                  alt=
+                  />
+
+              </div>
+              <div style="text-align: center">
+                <p>Click me to learn more!</p>
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!--~~./ end features block ~~-->
+
+      <!--~~./ end features block ~~-->
+
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Features Section 5
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <div id="benchmarks" class="about-us-block mrb-190">
+        <div class="container">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="mock-up-thumb reveal-right in">
+                  <img id="benchmarks_img" style="width: 120%" src="assets/images/benchmarks.png" />
+
+              </div>
+              <div style="text-align: center">
+                <p>Click me to learn more!</p>
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6">
+              <div class="section-title">
+                <h2 class="title-main">Meaningful Benchmarks</h2>
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+                    External benchmarks, both national and local, are included in ProAqCT dashboards, allowing users to easily
+                    compare scanner performance. Benchmarks are updated quarterly to ensure that performance is up to date with
+                    the latest standards and trends. Summary reports highlight protocol dose performances that are excessively high or
+                    excessively low in comparison to external performance standards.
+                </p>
+              </div>
+              <!-- /.about-content -->
+            </div>
+            <!-- /.col-lg-5 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!--~~./ end features block ~~-->
+
+
+
+
+      <!--~~./ end features block ~~-->
+
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Features Section 8
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <div id="ct_data" class="about-us-block mrb-190">
+        <div class="container">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6 order-lg-1 order-md-2 order-sm-2">
+              <div class="section-title">
+                <h2 class="title-main"> Data Insights</h2>
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+                  ProAqCT’s enterprise dose distribution analysis provides an easy way to track and audit patient
+                    doses by various categories, including patient size, scanner, scanner protocol and facility.
+                    The interactive dashboards allow users to drill down on dose data and pinpoint quality issues.
+                    For example, users can easily compare performance of an exam between sites and scanners and drill
+                    down to the scanner protocol level to identify variances in performance.
+                </p>
+              </div>
+              <!-- /.about-content -->
+            </div>
+
+            <div class="col-lg-6 order-lg-2 order-md-1 order-sm-1">
+              <div class="mock-up-thumb reveal-right in text-right">
+                  <img id="anal" style="width: 120%" src="assets/images/data_insights2.JPG"
+
+                       alt="ProAqCT’s powerful data analytics search engine allows filtering by division, site/hospital,
+                        scanner, age group, body regions scanned, and procedure (Figure 11). The interactive dashboards
+                        allow users to drill down on dose data and pinpoint quality issues. For example, users can easily
+                        compare performance of an exam/procedure between sites and scanners and drill down to the scanner
+                        protocol level to identify variances in performance (Figure 12 and Figure 13). Users can also
+                        benchmark and compare performance by operator (Figure14)." />
+
+
+              </div>
+
+              <div style="text-align: center">
+                <p>Click me to learn more!</p>
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!--~~./ end features block ~~-->
+
+
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Features Section 9
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <div id="lp" class="about-us-block mrb-190">
+        <div class="container">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="mock-up-thumb reveal-right in">
+                  <img id="leapfrog" style="width: 120%" src="assets/images/leapfrog.JPG"  alt="About Mock" />
+
+              </div>
+
+              <div style="text-align: center">
+                <p>Click me to learn more!</p>
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6">
+              <div class="section-title">
+                <h2 class="title-main">Realtime LeapFrog Dashboards & Pediatric Dose Monitoring</h2>
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+
+                Improve your pediatric dose performance with realtime alerting of LeapFrog scores!
+                </p>
+                  <ul class="c">
+                      <li>Get LeapFrog scores in realtime for Ped Head & Abdomen
+                      </li>
+                  <li>Scores stratified by patient age according to LeapFrog
+                  </li>
+
+                <li>Get Realtime notifications when LeapFrog scores drift from standard
+                </li>
+
+                  </ul>
+
+
+
+              </div>
+              <!-- /.about-content -->
+            </div>
+            <!-- /.col-lg-5 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!--~~./ end features block ~~-->
+
+
+
+
+
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Features Section 7
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <div id="dose" class="about-us-block mrb-190">
+        <div class="container">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="mock-up-thumb reveal-right in">
+                  <img id="dose_img" style="width: 120%" src="assets/images/Organ_dose_2.PNG" alt="About Mock" />
+
+              </div>
+              <div style="text-align: center">
+                <p>Click me to learn more!</p>
+              </div>
+              <!-- /.mock-up-block -->
+
+              <!-- /.mock-up-block -->
+            </div>
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6">
+              <div class="section-title">
+                <h2 class="title-main">Advanced Dosimetry</h2>
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+                    ProAqCT uses state-of-the-art organ dose library
+                    matrices developed by researchers at the National
+                    Cancer Institute.
+                    This library includes organ doses from more than 370
+                    computational human phantoms representing
+                    pediatrics and adults of both genders and various
+                    body habitus.
+                </p>
+
+                <ul>
+                  <li>
+                    Verify whether the patient had prior imaging studies of the same anatomic area.
+                  </li>
+                  <li>
+                    Track and Trend a patient's organ dose over time.
+                  </li>
+                  <li>
+                    Get Alerts when organ doses exceed deterministic thresholds for biological risk.
+                  </li>
+                </ul>
+              </div>
+              <!-- /.about-content -->
+            </div>
+            <!-- /.col-lg-5 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+
+
+
+      <div id="fetal" class="about-us-block mrb-190">
+        <div class="container">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6 order-lg-1 order-md-2 order-sm-2 order-xs-2">
+              <div class="section-title">
+                <h2 class="title-main">Fetal Dose Calculations</h2>
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+                  Automatically calculate fetal organ dose and effective dose on any pregnant patient.
+                    ProAqCT’s fetal dose calculator determines organ doses based on gestational
+                    age and exam scan range. Cumulative organ and effective dose for the fetus can be determined for any
+                    number of exams within the gestational age. ProAqCT also allows users to track and set alerts
+                    for fetal organ dose thresholds.
+
+                </p>
+              </div>
+              <!-- /.about-content -->
+            </div>
+
+            <div class="col-lg-6 order-lg-2 order-md-1 order-sm-1 order-xs-1 text-right">
+              <div class="mock-up-thumb reveal-right in">
+                   <img id="fetal_dose" style="width: 120%" src="assets/images/fetal.PNG"  alt="About Mock" />
+
+              </div>
+
+              <div style="text-align: center">
+                <p>Click me to learn more!</p>
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+
+
+       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Features Section 7
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <div id="PSD" class="about-us-block mrb-190">
+        <div class="container">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="mock-up-thumb reveal-right in">
+                  <img id="psd_img" style="width: 120%" src="assets/images/psd_good.JPG" alt="About Mock" />
+
+              </div>
+
+              <div style="text-align: center">
+                <p>Click me to learn more!</p>
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6">
+              <div class="section-title">
+                <h2 class="title-main">Interactive 3D Peak Skin Dose </h2>
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+                  ProAqCT delivers the most accurate patient peak skin dose calculation on the market.
+                    Using the full structured dose report, 3-D Peak Skin Dose maps are calculated for
+                    cath and IR procedures from any manufacture. ProAqCT achieves high accuracy peak skin
+                    dose maps by factoring system calibration factors, backscatter contribution,
+                    table attenuation, and all patient and beam geometry. The interactive UI allows users
+                    to rotate the antropromorphic phantom 360 degrees to review all areas of exposure.
+                    Automated Medical Physics Dose Evaluation reports that comply with the AMA 2021
+                    publication of CPT 76145 are produced with one-click.
+                </p>
+              </div>
+              <!-- /.about-content -->
+            </div>
+            <!-- /.col-lg-5 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+
+
+
+      <div id="fl_insights" class="about-us-block mrb-190">
+        <div class="container">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6 order-lg-1 order-md-2 order-sm-2 order-xs-2">
+              <div class="section-title">
+                <h2 class="title-main">Fluoro Exam Insights & Operator Performance Benchmarking</h2>
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+                 ProAqCT analyzes exam and operator performance for each fluoroscopic exam.
+                    Benchmarks of operator performance per procedure, fluoro time spent on each fluoro setting,
+                    Air Kerma & DAP per frame rate, and other insights are included in our fluoro dashboards.
+                    These powerful insights into exam and operator behavior help prevent high patient exposures
+                    and maintain procedures at ALARA.
+
+                </p>
+              </div>
+              <!-- /.about-content -->
+            </div>
+
+            <div class="col-lg-6 order-lg-2 order-md-1 order-sm-1 order-xs-1 text-right">
+              <div class="mock-up-thumb reveal-right in">
+                   <img id="fl_anal" style="width: 120%" src="assets/images/time-per-protocol.png" alt="About Mock" />
+
+              </div>
+
+              <div style="text-align: center">
+                <p>Click me to learn more!</p>
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+
+
+
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Features Section 7
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <div id="fl_al" class="about-us-block mrb-190">
+        <div class="container">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="mock-up-thumb reveal-right in">
+                  <img id="fl_alerts" style="width: 120%" src="assets/images/fl_alert_1.png" alt="About Mock" />
+
+              </div>
+
+              <div style="text-align: center">
+                <p>Click me to learn more!</p>
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6">
+              <div class="section-title">
+                <h2 class="title-main">Comprehensive Fluoro Dose Monitoring</h2>
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+                  ProAqCT allows users to set customizable alerts based on fluoro time, peak skin dose, DAP or Air Kerma
+                    at patient and exam level. Alerts can be further customized by fluoro procedure or operator.
+                    Alert review dashboards allow users to benchmark and compare performance across operators, procedures,
+                    and systems to fully optimize fluoroscopic doses.
+                  </p>
+                  <ul class="c">
+                      <li>Meets Joint Commission and standard of care fluoro dose monitoring requirements. </li>
+                      <li>Set customizable alerts based on fluoro time, PSD, DAP or Air Kerma at patient and exam level. </li>
+                      <li> Benchmark and compare performance across operators and systems. </li>
+                  </ul>
+
+
+              </div>
+              <!-- /.about-content -->
+            </div>
+            <!-- /.col-lg-5 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+
+
+            <div id="NM" class="about-us-block mrb-190">
+        <div class="container">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6 order-lg-1 order-md-2 order-sm-2 order-xs-2">
+              <div class="section-title">
+                <h2 class="title-main">Monitor Nuclear Medicine Doses, Including Therapies, PET and SPECT!</h2>
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+                    ProAqCT applies the Medical Internal Radiation (MIRD) formalism to calculate organ and effective
+                  dose estimates for nuclear medicine and PET exams.  The MIRD method defines absorbed dose as the
+                  product of time-integrated activity in a source organ, which represents the biokinetics of a
+                  radiopharmaceutical, and organ dose conversion factors called S values. To get the most accurate
+                  internal dosimetry estimates, ProAqCT implements the NCI library of S values and biokinetic data
+                  for more than 300 clinically relevant radiopharmaceuticals. This extensive library of S values is
+                  a function of 300 radionuclides, 55 target regions, 68 source regions, and 24 phantoms.
+
+
+                </p>
+              </div>
+              <!-- /.about-content -->
+            </div>
+
+            <div class="col-lg-6 order-lg-2 order-md-1 order-sm-1 order-xs-1 text-right">
+              <div class="mock-up-thumb reveal-right in">
+                   <img id = "NM_dose" style="width: 120%" src="assets/images/NM_dose.JPG" alt="About Mock" />
+
+              </div>
+
+              <div style="text-align: center">
+                <p>Click me to learn more!</p>
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+
+
+      <div id="ed_doses" class="about-us-block mrb-190">
+        <div class="container">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="mock-up-thumb reveal-right in">
+                  <img id="ed_tracking" style="width: 120%" src="assets/images/ED_3.JPG" alt="About Mock" />
+
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6">
+              <div class="section-title">
+                <h2 class="title-main">Track Cumulative Doses for all Procedures in Patient History</h2>
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+                  Easily track patients cumulative doses for all imaging procedures over time. See the combined dose for
+                  X-ray, Fluoroscopy, Nuclear Medicine, and CT. Get alerts when a patients cumulative does exceeds a user defined threshold
+                  over a time frame. Get the full picture of the radiation risk to your patients!
+                  </p>
+
+
+
+              </div>
+              <!-- /.about-content -->
+            </div>
+            <!-- /.col-lg-5 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+
+
+
+
+
+
+
+      <div id="qc" class="about-us-block mrb-190">
+        <div class="container">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6 order-lg-1 order-md-2 order-sm-2 order-xs-2">
+              <div class="section-title">
+                <h2 class="title-main">Auto Routine QC!</h2>
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+                    Another way we ensure optimal scanner performance is with our
+                    no-click automated QC tool. This tool provides rigorous QC
+                    measurements that lead to greater confidence and performance
+                    stability of your scanners. In addition to reducing the time
+                    staff spend collecting and reviewing QC, this tool standardizes
+                    QC procedures and minimizes scanner downtime by catching
+                    performance issues before they can impact patient scans.
+
+
+                </p>
+              </div>
+              <!-- /.about-content -->
+            </div>
+
+            <div class="col-lg-6 order-lg-2 order-md-1 order-sm-1 order-xs-1 text-right">
+              <div class="mock-up-thumb reveal-right in">
+                   <img style="width: 120%" src="assets/images/features/f-2.png" alt="About Mock" />
+
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+
+
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Features Section 9
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <div id="about-block" class="about-us-block mrb-190">
+        <div class="container">
+          <!-- Title Row -->
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="mock-up-thumb reveal-right in">
+                  <img id="dash" style="width: 120%" src="assets/images/features/f-9.png"  alt="About Mock" />
+
+              </div>
+
+              <div style="text-align: center">
+                <p>Click me to learn more!</p>
+              </div>
+              <!-- /.mock-up-block -->
+            </div>
+            <!-- /.col-lg-7 -->
+            <div class="col-lg-6">
+              <div class="section-title">
+                <h2 class="title-main">Intuitive Dashboards</h2>
+                <!-- /.title-main -->
+              </div>
+              <!-- /.section-title -->
+              <div class="block-content-info about-content">
+                <p class="description mrb-55">
+                  <ul class="c">
+                      <li>Dose apps provide clear workflows for dose
+                          management efforts.</li>
+                  <li>Quick links to alerts, reports, analytics,
+                      worklist, protocol books.</li>
+                  <li>Customize user settings, including alerts
+                      & reporting.</li>
+                      <li>Quick search for exam or patient.</li>
+                  <li>Easily setup and configure alert thresholds in the
+                      Dose Alert Setup App.</li>
+                  <li>Access full inventory of modalities
+                      organized by site or department.</li>
+                      <li>Manage userbase with assigned roles.</li>
+                  </ul>
+
+
+                </p>
+              </div>
+              <!-- /.about-content -->
+            </div>
+            <!-- /.col-lg-5 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!--~~./ end features block ~~-->
+
+
+
+      <div id="myModal" class="modal"  >
+        <span class="close">&times;</span>
+        <img class="modal-content-jp" id="img01" style="width: 450%">
+        <div id="caption"></div>
+      </div>
+
+      <div id="myModal_big" class="modal"  style="width: 200%">
+
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img02">
+          <div id="caption1"></div>
+
+      </div>
+
+       <!-- The Modal -->
+  <div class="modal fade" id="myModal_mapping">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+      <!-- Modal large -->
+      <div class = "modal fade" id = "new" role = "dialog">
+            <div class="modal-dialog modal-xl">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <button type = "button" class="close" data-dismiss = "modal">×</button>
+                     <h4 class = "modal-title">Protocol Mapping</h4>
+                  </div>
+                  <div class = "modal-body">
+                    <ul>
+                      <li>
+                        ProAqCT allows users to remap protocols by selecting a suggested protocol mapping from the RPID
+                        dropdown (left) or by searching the full lexicon (right).
+                      </li>
+                      <li>
+                        The auto complete search capability of
+                        the lexicon facilitates searching by key words.
+                      </li>
+                    </ul>
+                    <img  src="assets/images/remapping_lrg.JPG" width="600%" />
+                  </div>
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+          <!-- Modal large -->
+      <div class = "modal fade" id = "new2" role = "dialog">
+            <div class="modal-dialog modal-xl">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <button type = "button" class="close" data-dismiss = "modal">×</button>
+                     <h4 class = "modal-title">Alert Review</h4>
+                  </div>
+                  <div class = "modal-body">
+                     <ul>
+                       <li>ProAqCT sends only one alert notification even if exam triggers multiple alert thresholds.
+                       This feature prevents alert fatigue and increases user productivity.
+                       </li>
+                       <li>
+                         The Alert worklist is prioritized based on patient risk to help users focus on the most urgent alerts.
+                       </li>
+                       <li>
+                       Users can easily review multiple alert triggers on same exam at once and categorize alerts by user defined categories.
+                       </li>
+                    </ul>
+                    <img  src="assets/images/Alert_review.JPG" width="600%" />
+                  </div>
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+              <!-- Modal large install-->
+      <div class = "modal fade" id = "new3" role = "dialog">
+            <div class="modal-dialog modal-xl">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <button type = "button" class="close" data-dismiss = "modal">×</button>
+                     <h4 class = "modal-title">Full System Diagram</h4>
+                  </div>
+                  <div class = "modal-body">
+                    <ul>
+                      <li>Full system diagram showing integration of ProAqCT server (blue dotted box) with PACS/Modalities,
+                        the EMR, and third-party software (yellow dotted box) such as Nuance PowersScribe and ACR DIR.</li>
+                      <li>
+                        ProAqCT Deployment and configuration is guranteed within 60 days.
+                      </li>
+                    </ul>
+                    <img  src="assets/images/full_system.JPG" width="600%" />
+                  </div>
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+                  <!-- Modal large benchmarks-->
+      <div class = "modal fade" id = "new4" role = "dialog">
+            <div class="modal-dialog modal-xl">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <button type = "button" class="close" data-dismiss = "modal">×</button>
+                     <h4 class = "modal-title">Benchmarking Capabilities with Peer Organizations</h4>
+                  </div>
+                  <div class = "modal-body">
+                    <ul>
+                      <li>External benchmarks, both national and local, are included in ProAqCT dashboards, allowing users
+                        to easily compare scanner and protocol performance. </li>
+                      <li>
+                        External benchmarks are updated quarterly to
+                        ensure that performance is up to date with the latest standards and trends. </li>
+                      <li>Summary reports highlight
+                        protocol dose performance that is excessively high or excessively low relative to external performance standards
+                      </li>
+                    </ul>
+                    <img  src="assets/images/benchmarks_peers.JPG" width="600%" />
+                  </div>
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+                      <!-- Modal large anal-->
+      <div class = "modal fade" id = "new5" role = "dialog">
+            <div class="modal-dialog modal-xl">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <button type = "button" class="close" data-dismiss = "modal">×</button>
+                     <h4 class = "modal-title">Data Insights</h4>
+                  </div>
+                  <div class = "modal-body">
+                     <ul>
+                       <li>ProAqCT’s powerful data analytics search engine allows filtering by division, site/hospital,
+                       scanner, age group, body regions scanned, and procedure. </li>
+                       <li>
+                         The interactive dashboards
+                       allow users to drill down on dose data and pinpoint quality issues. For example, users can easily
+                       compare performance of an exam/procedure between sites and scanners and drill down to the scanner
+                         protocol level to identify variances in performance. </li>
+                       <li> Users can also
+                         benchmark and compare performance by operator.</li>
+                    </ul>
+                    <img  src="assets/images/data_insights2.JPG" width="600%" />
+                  </div>
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+                      <!-- Modal large dash-->
+      <div class = "modal fade" id = "new6" role = "dialog">
+            <div class="modal-dialog modal-xl">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <button type = "button" class="close" data-dismiss = "modal">×</button>
+                     <h4 class = "modal-title">Organized dose management workflows</h4>
+                  </div>
+                  <div class = "modal-body">
+                    <ul>
+                      <li> The Home screen organizes dose management tasks by apps. This helps users define clear workflows to tackle dose management.</li>
+                      <li> Quick Navigation links are provided in each view.</li>
+                      <li> The quick search bar allows users to easily find a patient or exam by typing the patient's name, MRN, or accession number.</li>
+                      <li> Alert notifications are accessible by clicking the alert bell or by accessing the Dose Alerts app in the home screen.</li>
+                    </ul>
+
+                    <img  src="assets/images/dash_new.JPG" width="600%" />
+                  </div>
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+                          <!-- Modal large dash-->
+      <div class = "modal fade" id = "new6" role = "dialog">
+            <div class="modal-dialog modal-xl">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <button type = "button" class="close" data-dismiss = "modal">×</button>
+                     <h4 class = "modal-title">Organized dose management workflows</h4>
+                  </div>
+                  <div class = "modal-body">
+                    <ul>
+                      <li> The Home screen organizes dose management tasks by apps. This helps users define clear workflows to tackle dose management.</li>
+                      <li> Quick Navigation links are provided in each view.</li>
+                      <li> The quick search bar allows users to easily find a patient or exam by typing the patient's name, MRN, or accession number.</li>
+                      <li> Alert notifications are accessible by clicking the alert bell or by accessing the Dose Alerts app in the home screen.</li>
+                    </ul>
+
+                    <img  src="assets/images/dash_new.JPG" width="600%" />
+                  </div>
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+                       <!-- Modal large ped dose-->
+      <div class = "modal fade" id = "new7" role = "dialog">
+            <div class="modal-dialog modal-xl">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <button type = "button" class="close" data-dismiss = "modal">×</button>
+                     <h4 class = "modal-title">Dashboards with organized dose management workflows</h4>
+                  </div>
+                  <div class = "modal-body">
+                    <ul>
+                      <li>ProAqCT uses organ dose library matrices developed by researchers at the National Cancer Institute.
+                      This library includes organ doses from more than 370 computational human phantoms representing
+                      pediatrics and adults of both genders and various body habitus.</li>
+                      <li>Interactive dosimetry allows users to change anatomy coverage to recalculate organ doses.</li>
+                      <li>User can track patient organ doses over time.</li>
+                    </ul>
+
+                    <img  src="assets/images/ped_dose.JPG" width="600%" />
+                  </div>
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+                           <!-- Modal large fetal dose-->
+      <div class = "modal fade" id = "new8" role = "dialog">
+            <div class="modal-dialog modal-xl">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <button type = "button" class="close" data-dismiss = "modal">×</button>
+                     <h4 class = "modal-title">Fetal Dosimetery</h4>
+                  </div>
+                  <div class = "modal-body">
+                    <ul>
+                      <li> ProAqCT’s fetal dose calculator determines organ doses based on gestational age and CT exam
+                        scan range. Cumulative organ and effective dose for the fetus can be determined for any number of
+                        CT exams within the gestational age. </li>
+
+                      <li>ProAqCT also allows users to track and set alerts for
+                        fetal organ dose and whole-body effective dose thresholds.</li>
+                    </ul>
+
+                    <img  src="assets/images/fetal_dose_2.JPG" width="600%" />
+                  </div>
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+                               <!-- Modal large PSD-->
+      <div class = "modal fade" id = "new9" role = "dialog">
+            <div class="modal-dialog modal-xl">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <button type = "button" class="close" data-dismiss = "modal">×</button>
+                     <h4 class = "modal-title">Accurate & Reproducible Peak Skin Dose Calculation</h4>
+                  </div>
+                  <div class = "modal-body">
+                    <ul>
+                      <li>
+                      Because discrete anthropomorphic phantoms do not always correspond to the patient's body habitus,
+                      users can also calculate PSD using our cylindrical phantoms.
+                      </li>
+
+                      <li>
+                      The major and minor axes,
+                      as well as the length of the cylinder, can be adjusted to approximate any patient’s body habitus.
+                      </li>
+
+                      <li>
+                      The cylinder phantoms provide an efficient way to estimate the patient’s entrance point and can improve the accuracy of the PSD calculation.
+                      </li>
+
+                        <li>
+                          Beam geometery and correction factors such as table pad thickness, calibration factors for air
+                          kerma at reference point, attenuation coefficients, backscatter factors, and patient offset from isocenter can be adjusted by the user.
+                        </li>
+                    </ul>
+
+                    <img  src="assets/images/cylinder_psd.JPG" width="600%" />
+                  </div>
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+                        <!-- Modal large op performance-->
+      <div class = "modal fade" id = "new10" role = "dialog">
+            <div class="modal-dialog modal-xl">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <button type = "button" class="close" data-dismiss = "modal">×</button>
+                     <h4 class = "modal-title">Fluoro Operator Performance Benchmarking</h4>
+                  </div>
+                  <div class = "modal-body">
+                    <p>Users can also benchmark and compare fluoro dose performance across operators and
+                      cath/angio and RF stations. Operator performance can be filtered by exam date ranges,
+                      site/hospital(s), scanner(s), age group, body region(s) scanned, and procedure(s).
+                    </p>
+
+                    <img  src="assets/images/op_performance.JPG" width="600%" />
+                  </div>
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+                            <!-- Modal large global alerts-->
+      <div class = "modal fade" id = "new11" role = "dialog">
+            <div class="modal-dialog modal-xl">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <button type = "button" class="close" data-dismiss = "modal">×</button>
+                     <h4 class = "modal-title">Set Fluoro Alerts on Any Dose Index!</h4>
+                  </div>
+                  <div class = "modal-body">
+                    <ul>
+                      <li> Global fluoro alerts can be set on any dose index, including Air kerma, DAP, Fluoro Time, Effective Dose</li>
+                      <li> Cumulative dose alerts over any time period can be set on any dose index. For example cumulative air kerma over 6, DAP over 12 months, PSD over 24 months for pediatrics</li>
+                      <li> Alerts on any dose index can be set at the exam or patient level. For example users can set an alert for embolization studies.</li>
+                      <li> ProAqCT provides the most versatile alerting on the market</li>
+                    </ul>
+
+                    <img  src="assets/images/Global_alerts.JPG" width="600%" />
+                  </div>
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+                            <!-- Modal large global alerts-->
+      <div class = "modal fade" id = "new12" role = "dialog">
+            <div class="modal-dialog modal-xl">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <button type = "button" class="close" data-dismiss = "modal">×</button>
+                     <h4 class = "modal-title">Monitoring of Nuclear Medicine Procedures!</h4>
+                  </div>
+                  <div class = "modal-body">
+                    <ul>
+                      <li> Set administered activity and effective dose alerts at the exam and patient level for nuclear medicine studes and procedures</li>
+                      <li> Get patient specific organ dose calculations based on NM procedure</li>
+                      <li> Get total effective dose from combo procedures such as PET/CT, SPECT/CT.</li>
+
+                    </ul>
+
+                    <img  src="assets/images/NM_view.JPG" width="600%" />
+                  </div>
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+                                <!-- Modal large leapfrog-->
+      <div class = "modal fade" id = "new13" role = "dialog">
+            <div class="modal-dialog modal-xl">
+               <div class = "modal-content">
+                  <div class = "modal-header">
+                     <button type = "button" class="close" data-dismiss = "modal">×</button>
+                     <h4 class = "modal-title">Track LeapFrog Performance in Realtime!</h4>
+                  </div>
+                  <div class = "modal-body">
+                    <ul>
+                      <li> Set administered activity and effective dose alerts at the exam and patient level for nuclear medicine studes and procedures</li>
+                      <li> Get patient specific organ dose calculations based on NM procedure</li>
+                      <li> Get total effective dose from combo procedures such as PET/CT, SPECT/CT.</li>
+
+                    </ul>
+
+                    <img  src="assets/images/leapfrog_score.JPG" width="600%" />
+                  </div>
+                  <div class = "modal-footer">
+                     <button type = "button" class = "btn btn-primary" data-dismiss = "modal">Close</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+    <!--
+        <footer class="site-footer footer-style-one pd-b-20">
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                Start Footer Widget Area
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div class="footer-widget-area">
+
+                <div class="container">
+                    <div class="row">
+
+                        <!--~~~~~ Start Widget Links ~~~~~-->
+                        <div class="col-lg-6">
+                            <aside class="widget bt-about-footer-widget">
+                                <div class="widget-content">
+                                    <div class="about-logo">
+                                        <a href="index.html">
+                                            <img src="assets/images/favicon.png" alt="Logo" width="150">
+                                        </a>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div><!--~./ end links widget ~-->
+
+                      <div class="col-lg-6">
+                        &copy; Copyright 2023
+                      </div>
+
+
+
+                        <!--~~~~~ Start Widget Links ~~~~~-->
+                        <!--<div class="col-lg-3">
+                            <aside class="widget widget_links">
+                                <h2 class="widget-title">Quick Links</h2>
+                                <div class="widget-content">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>-->
+                      <!--~./ end links widget ~-->
+
+                        <!--~~~~~ Start Widget Links ~~~~~-->
+                        <!--<div class="col-lg-3">
+                            <aside class="widget widget_links">
+                                <h2 class="widget-title">Support</h2>
+                                <div class="widget-content">
+                                    <ul>
+                                        <li><a href="#">Frequently Questions</a></li>
+                                        <li><a href="#">Terms Of Use</a></li>
+                                        <li><a href="#">Policy Privacy</a></li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </div>&lt;!&ndash;~./ end links widget ~&ndash;&gt;-->
+
+                        <!--~~~~~ Start Widget Social Share ~~~~~-->
+                        <!--<div class="col-lg-3">
+                            <aside class="widget social-share-widget">
+                                <h2 class="widget-title">Follow Us</h2>
+                                <div class="widget-content">
+                                    <ul class="footer-social">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>&lt;!&ndash;  /.footer-social &ndash;&gt;
+                                </div>
+                            </aside>
+                        </div>&lt;!&ndash;~./ end social share widget ~&ndash;&gt;-->
+                    </div>
+                </div>
+            </div><!--~./ end footer widgets area ~-->
+        </footer>
+
+
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- All The JS Files
+    ================================================== -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/theia-sticky-sidebar.min.js"></script>
+    <script src="assets/js/ResizeSensor.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/packery-mode.pkgd.min.js"></script>
+    <script src="assets/js/jquery.fitvids.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/simple-scrollbar.min.js"></script>
+    <script src="assets/js/scrolla.jquery.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/isInViewport.jquery.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modal_big = document.getElementById("new");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var img1 = document.getElementById("myImg1");
+        var img2 = document.getElementById("mapping-img");
+        var img3 = document.getElementById("myImg_dose_review");
+        var img4 = document.getElementById("benchmarks_img");
+        var img5 = document.getElementById("anal");
+        var img6 = document.getElementById("dash");
+        var img7 = document.getElementById("dose_img");
+        var img8 = document.getElementById("fetal_dose");
+        var img9 = document.getElementById("psd_img");
+        var img10 = document.getElementById("fl_anal");
+        var img11 = document.getElementById("fl_alerts");
+        var img12 = document.getElementById("NM_dose");
+        var img13 = document.getElementById("leapfrog");
+
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var modalImg_big = document.getElementById("new");
+        var captionText_big = document.getElementById("caption1");
+
+
+        img.onclick = function(){
+          $('#new3').modal('show')
+        }
+
+        img1.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+
+        img6.onclick = function(){
+          $('#new6').modal('show')
+        }
+
+        img7.onclick = function(){
+          $('#new7').modal('show')
+        }
+
+        img8.onclick = function(){
+          $('#new8').modal('show')
+        }
+
+        img9.onclick = function(){
+          $('#new9').modal('show')
+        }
+
+        img10.onclick = function(){
+          $('#new10').modal('show')
+        }
+
+        img11.onclick = function(){
+          $('#new11').modal('show')
+        }
+
+        img12.onclick = function(){
+          $('#new12').modal('show')
+        }
+
+        img13.onclick = function(){
+          $('#new13').modal('show')
+        }
+
+        img5.onclick = function(){
+          $('#new5').modal('show')
+        }
+
+        img3.onclick = function(){
+          $('#new2').modal('show')
+        }
+
+        img2.onclick = function(){
+          console.log('test')
+          $('#new').modal('show')
+
+          /*modalImg.src = "assets/images/remapping.JPG";
+          modalImg.width = "300%"
+          captionText.innerHTML = this.alt;*/
+        }
+
+        img4.onclick = function(){
+          console.log('test')
+          $('#new4').modal('show')
+
+          /*modalImg.src = "assets/images/remapping.JPG";
+          modalImg.width = "300%"
+          captionText.innerHTML = this.alt;*/
+        }
+
+
+        /*$('#pop').click(function(){
+          $('#new').modal('show');
+        });*/
+
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+</script>
+
+
+  </body>
+</html>
+
+
