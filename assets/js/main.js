@@ -1,11 +1,11 @@
 (function ($) {
 	"use strict";
-	
+
 	var wekalaApp = {
 		/* ---------------------------------------------
 		    ## Content Loading
-		--------------------------------------------- */	
-		contentLoading: function() {
+		--------------------------------------------- */
+/*		contentLoading: function() {
 			$("body").imagesLoaded( function() {
 				$('.preloader').delay(2000).fadeOut('slow');
 				setTimeout(function() {
@@ -19,7 +19,7 @@
 				    mobile: true,
 				    once: true
 				});
-                
+
                 $(".reveal-left:not(.in), .reveal-right:not(.in)").each(function(i) {
                     var $this = $(this);
                     $this.isInViewport(function(status) {
@@ -35,8 +35,8 @@
                     });
                 });
 			});
-		},	
-        
+		},*/
+
         /* ---------------------------------------------
             ## Scroll top
         --------------------------------------------- */
@@ -61,7 +61,7 @@
                 return false;
             });
         },
-        
+
         /*-------------------------------------------
             ## Sticky Header
         --------------------------------------------- */
@@ -78,9 +78,9 @@
                         }
                     }
                 });
-            } 
+            }
         },
-        
+
 		/* ---------------------------------------------
 		    ## One Page Menu Script
 		--------------------------------------------- */
@@ -93,8 +93,8 @@
                 e.preventDefault();
             });
 		},
-        
-        
+
+
 		/* ---------------------------------------------
 		    ## Menu Script
 		--------------------------------------------- */
@@ -111,7 +111,7 @@
 					e.stopImmediatePropagation();
 				    $self.siblings(".sub-menu").slideToggle("slow");
 				    $self.children(".menu-arrow").toggleClass("menu-extend");
-                    
+
                     $(".site-header").toggleClass("sidemenu-active");
 				});
 			});
@@ -154,16 +154,16 @@
                     $('html').toggleClass('is-scroll-disabled');
                     $('body').toggleClass('open');
                     $('.hamburger-wrapper').toggleClass('menu-show');
-                    $('.ef-background').addClass('animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+                    $('.ef-background').addClass('animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
                     function(){
                         $(this).removeClass('animated');
                     });
                 });
-                
+
                 if ($('.hamburger-wrapper').length) {
                     var hamburger_scroll = document.querySelector('.hamburger-wrapper-inner');
                     SimpleScrollbar.initEl(hamburger_scroll);
-                    
+
                     // Hovered link
                     $('.mainmenu-hamburger > li > a').wrapInner('<span></span>');
                     $('.mainmenu-hamburger > li > a').on('mouseenter', function(){
@@ -172,7 +172,7 @@
                     $('.mainmenu-hamburger > li > a').on('mouseleave', function(){
                         $('.mainmenu-hamburger').removeClass('has-hovered-link');
                     });
-                    
+
                     $('.hamburger-wrapper .mainmenu-hamburger li a').wrap('<div class="menu-inside"></div>');
                     var $submenuIndicatorHamburger = $('.hamburger-wrapper .mainmenu-hamburger').find('li').has('.sub-menu');
                         $submenuIndicatorHamburger.children('.menu-inside').append("<span class='menu-click'><i class='menu-arrow fas fa-arrow-right'></i></span>");
@@ -188,8 +188,8 @@
                             sub_menu = _this.parent().next('.sub-menu'),
                             sub_menu_back = sub_menu.find('>li:eq(0) .back-click'),
                             sub_menu_links = sub_menu.find('> li > .menu-inside > a'),
-                            sub_tl = new TimelineMax({ 
-                                paused:true, 
+                            sub_tl = new TimelineMax({
+                                paused:true,
                             });
 
                         sub_tl
@@ -213,12 +213,12 @@
                     });
                 }
             }
-		},		
-            
+		},
+
 		/* ---------------------------------------------
 		    ## Pop Up Scripts
 		 --------------------------------------------- */
-		popupscript: function() {	
+		popupscript: function() {
 			function getScrollBarWidth () {
 			    var $outer = $('<div>').css({visibility: 'hidden', width: 100, overflow: 'scroll'}).appendTo('body'),
 			        widthWithScroll = $('<div>').css({width: '100%'}).appendTo($outer).outerWidth();
@@ -281,7 +281,7 @@
 			    });
 			}
 		},
-        
+
 		/* ---------------------------------------------
 		    ## Isotope Activation
 		 --------------------------------------------- */
@@ -310,7 +310,7 @@
 			    });
 			});
 		},
-        
+
         /* ---------------------------------------------
             ## Promo Numbers
          --------------------------------------------- */
@@ -325,16 +325,16 @@
                     }
                 });
             });
-        },  
-		
+        },
+
 		/* ---------------------------------------------
 		    ## Content Video Responsive
 		 --------------------------------------------- */
 		content_video: function() {
 			var $postVideo = $('.blog-single-page');
 			$postVideo.fitVids();
-		},		
-        
+		},
+
          /* ---------------------------------------------
             ## Brands Carousel
          --------------------------------------------- */
@@ -352,10 +352,10 @@
                     nav: true,
                     dots: false,
                     navText: ["<span class='icon-arrow-back-left-'></span> Prev", "Next <span class='icon-arrow-forward-ne1'></span>"],
-                });  
+                });
             }
-        },	
-        
+        },
+
          /* ---------------------------------------------
             ## Brands Carousel
          --------------------------------------------- */
@@ -390,10 +390,10 @@
                             items: items
                         }
                     }
-                });  
+                });
             }
         },
-        
+
          /* ---------------------------------------------
             ## Team Member Carousel
          --------------------------------------------- */
@@ -429,7 +429,7 @@
                             items: items
                         }
                     }
-                });  
+                });
             }
             $('.team-block .btn-links-area .btn-prev').on('click',function() {
                 $member_items.trigger('prev.owl.carousel');
@@ -438,13 +438,13 @@
                 $member_items.trigger('next.owl.carousel');
             });
         },
-        
+
 		/* ---------------------------------------------
             ## Innovation Carousel
 		--------------------------------------------- */
 		innovationCarousel: function() {
             var $innovationrCarousel = $("#innovation-carousel");
-            
+
 			if( $innovationrCarousel.length ){
 			    $innovationrCarousel.each(function() {
 
@@ -483,7 +483,7 @@
 
 			        var animationIn = $(this).attr("data-owl-anim-in");
 			        if( !animationIn ) animationIn = 0;
-			        else animationIn = $(this).attr("data-owl-anim-in");	        
+			        else animationIn = $(this).attr("data-owl-anim-in");
 
 			        var animationOut = $(this).attr("data-owl-anim-out");
 			        if( !animationOut ) animationOut = 0;
@@ -610,7 +610,7 @@
                 $innovationrCarousel.trigger('next.owl.carousel');
             });
 		},
-        
+
         /* ---------------------------------------------
 		    ## Testimonial Carousel
 		 --------------------------------------------- */
@@ -643,7 +643,7 @@
                 $(".slick-slide-item").each(function(index, el) {
                        $(".testimonial-slick-wrapper").slick('slickAdd', "<div>" + el.innerHTML + "</div>");
                 });
-                
+
                 $('.testimonial-block .btn-links-area .btn-prev').on('click', function() {
                     slideMain.slick('slickPrev');
                 });
@@ -654,7 +654,7 @@
                 slideMain.slick('slickPlay');
             };
 		},
-        
+
 		/* ---------------------------------------------
 		    ## Sidebar Script
 		--------------------------------------------- */
@@ -665,16 +665,16 @@
                     'additionalMarginTop': 0,
                     'minWidth': 992,
                 });
-            } 
+            }
 			if ($('.portfolio-details-sticky').length) {
                 $('.portfolio-details-sticky').theiaStickySidebar({
                     'containerSelector': '.portfolio-sticky',
                     'additionalMarginTop': 135,
                     'minWidth': 992,
                 });
-            } 
-		},	
-        	
+            }
+		},
+
 
 		/* ---------------------------------------------
 		    ## Contact Form Script
