@@ -5,7 +5,7 @@
 		/* ---------------------------------------------
 		    ## Content Loading
 		--------------------------------------------- */
-/*		contentLoading: function() {
+		contentLoading: function() {
 			$("body").imagesLoaded( function() {
 				$('.preloader').delay(2000).fadeOut('slow');
 				setTimeout(function() {
@@ -35,7 +35,7 @@
                     });
                 });
 			});
-		},*/
+		},
 
         /* ---------------------------------------------
             ## Scroll top
