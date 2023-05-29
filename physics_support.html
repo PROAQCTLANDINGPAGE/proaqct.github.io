@@ -47,6 +47,24 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/cx-styles.css" />
 
+
+    <style>
+      .dropdown:hover>.dropdown-menu {
+        display: block;
+      }
+
+      .dropdown-menu {
+        width: 500px !important;
+
+      }
+
+      .jan-head{
+        background-color: #2980b9 ;
+        color: white;
+
+      }
+    </style>
+
     <script src="assets/js/modernizr.min.js"></script>
   </head>
   <body data-spy="scroll" data-offset="170" data-target=".navigation-area">
@@ -104,12 +122,51 @@
                             >
                           </li>
                           <li>
-                            <a class="nav-link" style="font-size: larger" href="features.html"
-                              >Features</a
-                            >
+                              <a class="nav-link " style="font-size: 20px" data-toggle="dropdown">Features </a>
+                              <!--<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+                                <span class="caret"></span></button>-->
+                              <ul class="dropdown-menu w-100" >
+
+                                <a class="list-group-item list-group-item-action active" style="background-color: #2980b9; color: white">
+                                  System Features
+                                </a>
+                                <a href="features.html#id_it" class="list-group-item list-group-item-action">Vendor Agnostic Dose Monitoring Installation</a>
+                                <a href="features.html#iq" class="list-group-item list-group-item-action">Automated Image Quality Monitoring</a>
+                                <a href="features.html#mapping" class="list-group-item list-group-item-action">Automated & Accurate Protocol Maps</a>
+
+                                <a class="list-group-item list-group-item-action active" style="background-color: #2980b9; color: white">
+                                  Dose Monitoring Features
+                                </a>
+                                <a href="features.html#ct-dose" class="list-group-item list-group-item-action">Simplified Alert Notification Review for CT, X-ray, Nuc Med, Fluoroscopy</a>
+                                <a href="features.html#fl_al" class="list-group-item list-group-item-action">Fluoro Alert Notifications</a>
+                                <a href="features.html#NM" class="list-group-item list-group-item-action">Nuclear Medicine Dose Monitoring</a>
+                                <a class="list-group-item list-group-item-action active" style="background-color: #2980b9; color: white">
+                                  Realtime Data Insights
+                                </a>
+                                <a href="features.html#benchmarks" class="list-group-item list-group-item-action">Local & National Dose Benchmarking</a>
+                                <a href="features.html#ct_data" class="list-group-item list-group-item-action">Data insights that lead to Quality Improvements</a>
+                                <a href="features.html#lp" class="list-group-item list-group-item-action">Realtime LeapFrog & Pediatric Dose Monitoring</a>
+                                <a href="features.html#fl_insights" class="list-group-item list-group-item-action">Fluoro Exam Insights</a>
+                                <a class="list-group-item list-group-item-action active" style="background-color: #2980b9; color: white">
+                                  Patient Specific Dosimetry
+                                </a>
+                                <a href="features.html#dose" class="list-group-item list-group-item-action">Patient Specific Organ Dosimetery</a>
+                                <a href="features.html#fetal" class="list-group-item list-group-item-action">Fetal Organ Dose per gestational age</a>
+                                <a href="features.html#PSD" class="list-group-item list-group-item-action">3D Peak Skin Dose Maps for Fluoroscopy</a>
+
+
+                                <a class="list-group-item list-group-item-action active" style="background-color: #2980b9; color: white">
+                                  Reporting & Physics Support
+                                </a>
+                                <a href="physics_support.html" class="list-group-item list-group-item-action">Automated Reports & Physics Support</a>
+                                <a href="features.html#qc" class="list-group-item list-group-item-action">Automated QC for CT phantoms</a>
+
+
+
+                              </ul>
                           </li>
                           <li>
-                            <a class="nav-link" style="font-size: larger" href="about_us.html">About</a>
+                            <a class="nav-link" style="font-size: larger" href="our_story.html">About</a>
                           </li>
                           <li>
                             <a class="nav-link" style="font-size: larger" href="contact.html">Contact</a>
@@ -279,7 +336,29 @@
 
 
 
-
+    <!-- All The JS Files
+    ================================================== -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/theia-sticky-sidebar.min.js"></script>
+    <script src="assets/js/ResizeSensor.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/packery-mode.pkgd.min.js"></script>
+    <script src="assets/js/jquery.fitvids.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/simple-scrollbar.min.js"></script>
+    <script src="assets/js/scrolla.jquery.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/isInViewport.jquery.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- main-js -->
 
 
 
