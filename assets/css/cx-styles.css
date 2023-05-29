@@ -75,7 +75,7 @@ color: #fff !important;
 
 .site-header.default-header-style {
     background-color: #2980B9;
-    padding: 20px 0 !important;
+    padding: 14px 0 !important;
 }
 
 .navigation .mainmenu > li > a {
@@ -209,7 +209,7 @@ color: #fff !important;
 
 #carousel3 {
     /*background-image: url('../images/mapping_14.jpg');*/
-    background-image: url('../images/mapping.jpg');
+    background-image: url('../images/mapping_lower.jpg');
 
     background-position: center center;
     background-size: cover;

@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="assets/css/icomoon.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/cx-styles.css" />
+    <link rel="stylesheet" href="assets/css/head-style_custom.css" />
 
     <style>
       .dropdown:hover>.dropdown-menu {
@@ -62,6 +63,15 @@
         color: white;
 
       }
+
+
+
+
+
+
+
+
+
     </style>
 
     <script src="assets/js/modernizr.min.js"></script>
@@ -86,29 +96,103 @@
     <!--********************************************************-->
     <!--********************* SITE CONTENT *********************-->
     <!--********************************************************-->
-    <div class="site-content">
+
+    <header class="site-header default-header-style">
+
+      <nav id='cssmenu' style="background-color: #2980b9">
+
+
+              <div class="logo"><a href="index.html"><img src="assets/img/ProAQCT_logo_tm.png" alt="Site Logo" /> </a></div>
+
+              <div id="head-mobile"></div>
+              <div class="button"></div>
+              <ul >
+                <li class='active' ><a href='#'>HOME</a></li>
+                <li><a href='our_story.html'>ABOUT</a></li>
+                <li><a href='features.html'>FEATURES</a>
+                  <ul>
+                    <li><a href='features.html#id_it'>System Features</a>
+                      <ul>
+                        <li><a href='features.html#id_it'>Vendor Agnostic & Fast Installation</a></li>
+                        <li><a href='features.html#iq'>Automated Image Quality Monitoring</a></li>
+                        <li><a href='features.html#mapping'>Automated & Accurate Protocol Maps</a></li>
+                        <li><a href='features.html#dash'>Clear & intuitive Workflows</a></li>
+                      </ul>
+                    </li>
+                    <li><a href='#'>Dose Monitoring Features</a>
+                      <ul>
+                        <li><a href='features.html#ct-dose'>CT, Fl, X-ray, Nuclear Medicine Alerts</a></li>
+                        <li><a href='features.html#fl_al'>Fluoro Dose Monitoring</a></li>
+                        <li><a href='features.html#NM'>Nuclear Medicine Dose Monitoring</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href='#'>Realtime Data Insights</a>
+                      <ul>
+                        <li><a href='features.html#benchmarks'>Local & National Dose Benchmarking</a></li>
+                        <li><a href='features.html#ct_data'>Quality Improvements Insights</a></li>
+                        <li><a href='features.html#lp'>LeapFrog & Pediatric Dose Monitoring</a></li>
+                        <li><a href='features.html#fl_insights'>Fluoro Exam Insights</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href='#'>Patient Specific Dosimetry</a>
+                      <ul>
+                        <li><a href='features.html#dose'>Patient Specific Organ Dosimetery</a></li>
+                        <li><a href='features.html#fetal'>Fetal Organ Dose per gestational age</a></li>
+                        <li><a href='features.html#PSD'>3D Peak Skin Dose Maps</a></li>
+
+                      </ul>
+                    </li>
+
+                    <li><a href='#'>Reporting & Physics Support</a>
+                      <ul>
+                        <li><a href='physics_support.html'>Automated Reports & Physics Support</a></li>
+                        <li><a href='features.html#qc'>Automated QC for CT phantoms</a></li>
+
+
+                      </ul>
+                    </li>
+
+                  </ul>
+                </li>
+                <li><a href='contact.html'>CONTACT US</a></li>
+                <li><a href='contact.html#more-info' style="color: #26e3a9; ">REQUEST A FREE TRIAL</a></li>
+
+              </ul>
+
+
+      </nav>
+
+    </header>
+
+
+
+
+
+
       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                 Start Site Header
             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <header class="site-header default-header-style">
+<!--      <header class="site-header default-header-style">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12">
               <div class="navigation-area">
-                <!-- Site Branding -->
+                &lt;!&ndash; Site Branding &ndash;&gt;
                 <div class="site-branding">
                   <a href="index.html">
                     <img src="assets/img/ProAQCT_logo_tm.png" alt="Site Logo" />
                   </a>
                 </div>
 
-                <!--<div class="mobile-show text-center" style="float: left"  >
+                &lt;!&ndash;<div class="mobile-show text-center" style="float: left"  >
 
                       <a href="index.html"><img src="assets/assets/images/favicon.png" alt="Logo" width="80"/></a>
-                  </div>-->
-                <!--  /.site-branding -->
+                  </div>&ndash;&gt;
+                &lt;!&ndash;  /.site-branding &ndash;&gt;
 
-                <!-- Site Navigation -->
+                &lt;!&ndash; Site Navigation &ndash;&gt;
                 <div class="site-navigation">
                   <div class="hamburger-menus">
                     <span></span>
@@ -123,8 +207,8 @@
                   </div>
                   <nav class="navigation">
                     <div class="overlaybg"></div>
-                    <!--  /.overlaybg -->
-                    <!-- Main Menu -->
+                    &lt;!&ndash;  /.overlaybg &ndash;&gt;
+                    &lt;!&ndash; Main Menu &ndash;&gt;
                     <div class="menu-wrapper">
                       <div class="menu-content">
                         <ul class="mainmenu">
@@ -133,10 +217,13 @@
                               >Home</a
                             >
                           </li>
+
                           <li>
-                            <a class="nav-link " style="font-size: 20px" data-toggle="dropdown">Features </a>
-                              <!--<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
-                                <span class="caret"></span></button>-->
+                            <a class="nav-link" style="font-size: larger; color: white; font-weight: 600;" href="features.html">Features</a>
+                            <a  class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="sr-only">Toggle Dropdown</span>
+                            </a>
+
                               <ul class="dropdown-menu w-100" >
 
                                 <a class="list-group-item list-group-item-action active" style="background-color: #2980b9; color: white">
@@ -176,7 +263,16 @@
 
 
                               </ul>
-                          </li>
+                        </li>
+
+
+
+
+
+
+
+
+
                           <li>
                             <a class="nav-link" style="font-size: larger" href="our_story.html">About</a>
                           </li>
@@ -189,32 +285,36 @@
                           </li>
 
                         </ul>
-                        <!-- /.menu-list -->
+
+
+                        &lt;!&ndash; /.menu-list &ndash;&gt;
                       </div>
-                      <!-- /.hours-content-->
+                      &lt;!&ndash; /.hours-content&ndash;&gt;
                     </div>
-                    <!-- /.menu-wrapper -->
+                    &lt;!&ndash; /.menu-wrapper &ndash;&gt;
                   </nav>
                 </div>
-                <!--  /.site-navigation -->
+                &lt;!&ndash;  /.site-navigation &ndash;&gt;
 
                 <div class="header-navigation-right">
 
-                  <!--~./ lets-talk-area ~-->
+                  &lt;!&ndash;~./ lets-talk-area ~&ndash;&gt;
                 </div>
-                <!--~./ header-navigation-right ~-->
+                &lt;!&ndash;~./ header-navigation-right ~&ndash;&gt;
               </div>
-              <!--  /.navigation-area -->
+              &lt;!&ndash;  /.navigation-area &ndash;&gt;
             </div>
-            <!--  /.col-12 -->
+            &lt;!&ndash;  /.col-12 &ndash;&gt;
           </div>
-          <!--  /.row -->
+          &lt;!&ndash;  /.row &ndash;&gt;
         </div>
-        <!--  /.container-fluid -->
-      </header>
+        &lt;!&ndash;  /.container-fluid &ndash;&gt;
+      </header>-->
       <!--~~./ end site header ~~-->
       <!--~~~ Sticky Header ~~~-->
-      <div id="sticky-header"></div>
+      <div id="sticky-header">
+
+      </div>
       <!--~./ end sticky header ~-->
 
       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1005,6 +1105,11 @@
     <script src="assets/js/isInViewport.jquery.js"></script>
     <script src="assets/js/TweenMax.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/header_jan.js"></script>
+
+
+
+
     <!-- main-js -->
   </body>
 </html>
