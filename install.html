@@ -15,6 +15,28 @@ EMAIL_HOST_PASSWORD=wupc hwuu ycjw elal
 LOAD_PARTIAL_EXAM=0
 
 
+ALTER TABLE dose_series ADD COLUMN kvp_per_slice MEDIUMTEXT DEFAULT NULL;
+ALTER TABLE dose_series ADD COLUMN mA_per_slice MEDIUMTEXT DEFAULT NULL;
+ALTER TABLE dose_series ADD COLUMN ctdi_per_slice MEDIUMTEXT DEFAULT NULL;
+ALTER TABLE dose_series ADD COLUMN tissue_noise_per_slice MEDIUMTEXT DEFAULT NULL;
+ALTER TABLE dose_series ADD COLUMN tissue_signal_per_slice MEDIUMTEXT DEFAULT NULL;
+ALTER TABLE dose_series ADD COLUMN air_noise_per_slice MEDIUMTEXT DEFAULT NULL;
+
+ALTER TABLE dose_series ADD COLUMN air_mean_per_slice MEDIUMTEXT DEFAULT NULL;
+
+ALTER TABLE dose_series ADD COLUMN instance_per_slice MEDIUMTEXT DEFAULT NULL;
+
+ALTER TABLE dose_series ADD COLUMN lat_per_slice MEDIUMTEXT DEFAULT NULL;
+ALTER TABLE dose_series ADD COLUMN ap_per_slice MEDIUMTEXT DEFAULT NULL;
+ALTER TABLE dose_series ADD COLUMN wed_per_slice MEDIUMTEXT DEFAULT NULL;
+ALTER TABLE dose_series ADD COLUMN eff_dia_per_slice MEDIUMTEXT DEFAULT NULL;
+
+ALTER TABLE qclog_alert_categories ADD COLUMN exam_body_part VARCHAR(200) DEFAULT NULL;
+
+ALTER TABLE qclog_alert_categories ADD COLUMN console_protocol VARCHAR(200) DEFAULT NULL;
+
+ALTER TABLE qclog_alert_categories ADD COLUMN tech VARCHAR(200) DEFAULT NULL;
+
 
 </body>
 </html>
