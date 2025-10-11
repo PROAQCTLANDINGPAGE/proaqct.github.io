@@ -6,7 +6,7 @@
       "kid": "proaqct-2025-01",
       "n": "16CAhljapoNA_OFl1R9Hnq4ZXQ5DM8AHS6LFrWIx4NRXMNDtfli2nL9gEjk56sa_blqPfPxvtiPVqHS_SFO3D9eUGJ8JM5k0rY72Ko4Ir0jG7Gt9nYEUj5ULzn4AUnA8yrK_gnOduD21Z-GK4UnNXF7xHtaG_eYvDnVQnVwzmBRsUmahCTq7370kBczGb4wu2GJZZa7lsoeIgKISFg4tMVqLFSXtpHIzVzsN_nHd-wiGxDi97QfQ8Mu6pVXaQq5jYO-nGSWDq5E59yX2xEGq5tZEPIzSUUndTY1bKjcXJM7miDXGOwTOCIrSm0OshmCemYprylPNBM_gt8622JuUgw",
       "alg": "RS256",
-      "typ": "JWT",
+      "typ": "JWT"
 
     }
   ]
