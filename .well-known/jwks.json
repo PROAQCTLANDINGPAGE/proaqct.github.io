@@ -1,12 +1,16 @@
 {
   "keys": [
     {
+      "kty": "RSA",
       "e": "AQAB",
       "kid": "proaqct-2025-01",
-      "kty": "RSA",
-      "n": "xMdqMKG8j3klrb1rIL2kHTT_zFYuJfOJtBzyGjQPDqWq79ch7JRemIACLFhnTMnWfeYY_TAoivBa8jC22tjK4I0N6FeNOIIMzDKugdxB6SyHC3RLqH58FemI252EOp0o9WddcOsD777psEpSl6zCMeTqP83pXSZDr2Coii3lwcwvFnTvo-ywvBVy-P6j8GV2HhwByELDpMT8ismd8akCzEFBJx28aOBZ8z_L4-X0WVoRU88sAQNlGjomWpb8KMeYIxs_zsgelMiJMTQsDeaYQ093xK-QIfeQjfoUI8AI3pH2Nvi6_VQfZ9I6QtywRgKXvo73ATcMnkVzBPOnTNCmlw",
+      "n": "16CAhljapoNA_OFl1R9Hnq4ZXQ5DM8AHS6LFrWIx4NRXMNDtfli2nL9gEjk56sa_blqPfPxvtiPVqHS_SFO3D9eUGJ8JM5k0rY72Ko4Ir0jG7Gt9nYEUj5ULzn4AUnA8yrK_gnOduD21Z-GK4UnNXF7xHtaG_eYvDnVQnVwzmBRsUmahCTq7370kBczGb4wu2GJZZa7lsoeIgKISFg4tMVqLFSXtpHIzVzsN_nHd-wiGxDi97QfQ8Mu6pVXaQq5jYO-nGSWDq5E59yX2xEGq5tZEPIzSUUndTY1bKjcXJM7miDXGOwTOCIrSm0OshmCemYprylPNBM_gt8622JuUgw",
       "alg": "RS256",
-      "use": "sig"
+      "typ": "JWT",
+
     }
   ]
 }
+
+
+
