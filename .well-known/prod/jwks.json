@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "e": "AQAB",
+      "kid": "proaqct-2025-01",
+      "kty": "RSA",
+      "n": "n1-ZqC_XIvDU0rO-LfwAcgCc1yeIf6crdWsc97IVbPt4Iy7wWKIWCI5qBJU6TgV-LYLpMbIpPz5Ao10ZmdMBHmRAlWrWwVKG1_A920YWGw0_R2MPSm91xpqRJJ6GApj40wdhiQb18RGRbwbKlJa9zPpx8A0rL3hvRRU-Ov3DKX1k4BlzIvSBM27M5no4K8o8Swc4quw9jNkqH94j-JIRv24gNedyaqZ9OcGcB39F49-pIp5Ufk6ieWGSg0ZAqfDxsP2Wi5-P-97VUN6QCtMXECLMAd9WKg80xiGHZtefal5-Os14LKhcdJ8EYcAbotPtijanqU8yKE2YYsm6LpOrSQ",
+      "use": "sig",
+      "alg": "RS256"
+    }
+  ]
+}
