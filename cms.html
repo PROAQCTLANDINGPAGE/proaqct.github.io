@@ -1,94 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XK3SJNDM8Y"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-XK3SJNDM8Y');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XK3SJNDM8Y");
     </script>
-    <!-- Basic Page Needs
-        ================================================== -->
+
+    <!-- Basic Page Needs -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Specific Meta
-        ================================================== -->
+    <!-- Meta -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
+    <meta
+      name="description"
+      content="ProAqCT helps healthcare organizations meet CMS ExRad eCQM reporting requirements for CT, optimizing image quality and radiation dose."
+    />
 
+    <title>
+      ProAqCT – Quality Optimization & CMS eCQM ExRad Reporting Requirements
+    </title>
 
-    <!-- Titles
-        ================================================== -->
-    <title>ProAqCT - Quality Optimization - CMS eQCM Reporting Requirements </title>
-
-    <!-- Favicons
-        ================================================== -->
+    <!-- Favicons -->
     <link rel="icon" href="assets/images/favicon.png" />
-    <!-- <link rel="apple-touch-icon" sizes="72x72" href="assets/images/android-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-144x144.png"> -->
 
-    <!-- Custom Font
-        ================================================== -->
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,800,900&display=swap"
       rel="stylesheet"
     />
 
-    <!-- CSS
-        ================================================== -->
-
-
+    <!-- Core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/magnific-popup.css" />
     <link rel="stylesheet" href="assets/css/simple-scrollbar.css" />
     <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome.all.min.css" />
     <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
     <link rel="stylesheet" href="assets/css/icomoon.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/cx-styles.css" />
     <link rel="stylesheet" href="assets/css/head-style_custom.css" />
 
-
+    <!-- Page-level tweaks -->
     <style>
-      .dropdown:hover>.dropdown-menu {
+      .dropdown:hover > .dropdown-menu {
         display: block;
       }
 
       .dropdown-menu {
-        width: 500px !important;
-
+        max-width: 500px;
+        width: 100%;
       }
 
-      .jan-head{
-        background-color: #2980b9 ;
-        color: white;
+      .jan-head {
+        background-color: #2980b9;
+        color: #ffffff;
+      }
 
+      .page-title-area {
+        background: linear-gradient(
+          135deg,
+          #2980b9 0%,
+          #26e3a9 100%
+        );
+        color: #ffffff;
+        padding: 7rem 0 6rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .page-title-area .breadcrumb a {
+        color: #eaf7ff;
+      }
+
+      .section-title .title-main {
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .btn-primary,
+      .btn.btn-default.btn-primary {
+        background: #2980b9;
+        border-color: #2980b9;
+      }
+
+      .btn-primary:hover,
+      .btn.btn-default.btn-primary:hover {
+        background: #1e638e;
+        border-color: #1e638e;
+      }
+
+      .hero-cta {
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .img-fluid-custom {
+        max-width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 991.98px) {
+        .page-title-area {
+          padding-top: 6rem;
+          padding-bottom: 4rem;
+        }
       }
     </style>
 
     <script src="assets/js/modernizr.min.js"></script>
   </head>
-  <body data-spy="scroll" data-offset="170" data-target=".navigation-area">
 
-
-
-    <!--********************************************************-->
-    <!--********************* SITE CONTENT *********************-->
-    <!--********************************************************-->
+  <body
+    data-spy="scroll"
+    data-offset="170"
+    data-target=".navigation-area"
+  >
     <div class="site-content">
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                Start Site Header
-            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!-- ================= HEADER ================= -->
       <header class="site-header default-header-style">
 
       <nav id='cssmenu' style="background-color: #2980b9">
@@ -103,7 +142,7 @@
                 <li><a href='our_story.html'>ABOUT</a></li>
                 <li><a href='features.html'>FEATURES</a>
                   <ul>
-                    <li><a href='cms.html'>CMS eQCM Reporting for Global Noise</a></li>
+
                     <li><a href='features.html#id_it'>System Features</a>
                       <ul>
                         <li><a href='features.html#id_it'>Vendor Agnostic & Fast Installation</a></li>
@@ -159,250 +198,354 @@
 
     </header>
 
-
-
-      <div class="page-title-area pd-t-90 mrb-200">
-        <div class="svg-shape-left">
-          <!-- <img src="assets/images/shape/left.png" alt="img"> -->
-        </div>
-        <!--~~./ svg-shape-left ~~-->
-
+      <!-- =============== PAGE TITLE / HERO =============== -->
+      <section class="page-title-area">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-12 pd-t-60">
+            <div class="col-md-12">
               <div class="page-header-content">
+                <br>
+                <br>
                 <div class="page-header-caption">
-
-
-                  <h2 class="page-title"> CMS's Proposed New
-                    Requirement on Excessive Radiation Dose or
-                    Inadequate Image Quality for CT</h2>
+                  <h3 style="color: white">
+                    <a href='https://ecqi.healthit.gov/ecqm/hosp-outpt/2025/cms1206v2'>Excessive Radiation Dose or Inadequate Image Quality
+                      for CT (ExRad) </a>
+                  </h3>
+                  <h4 style="color: whitesmoke">(eCQM <a href='https://ecqi.healthit.gov/ecqm/hosp-outpt/2025/cms1206v2'>#1206</a>/<a href="https://ecqi.healthit.gov/ecqm/hosp-inpt/2025/cms1074v2">1074</a>/MIPS measure #494)</h4>
+                  <br>
+                  <h2>Let's maximize your CMS reimbursement with ProAqCT!</h2>
                 </div>
-                <div class="breadcrumb-area">
+                <nav
+                  class="breadcrumb-area"
+                  aria-label="Breadcrumb"
+                >
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item">
                       <a href="index.html">Home</a>
                     </li>
-                    <li class="breadcrumb-item active">Features</li>
+                    <li class="breadcrumb-item active">
+
+                     <a href='contact.html'>CONTACT US</a>
+                    </li>
                   </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main>
+        <!-- =============== EXRAD OVERVIEW =============== -->
+        <section
+          class="about-us-block mrb-190"
+          aria-labelledby="exrad-overview-title"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-title">
+                  <h2
+                    id="exrad-overview-title"
+                    class="title-main"
+                  >
+                    Here’s what to know about the ExRad eCQM for in /
+                    outpatient reporting:
+                  </h2>
                 </div>
-                <!--~~./ breadcrumb-area ~~-->
+
+                <div class="block-content-info about-content">
+                  <ul class="description mrb-55">
+                    <li>
+                      In August 2023, CMS expanded the number of
+                      self-reported inpatient electronic clinical
+                      quality metrics (eCQMs) from one mandatory to
+                      three mandatory plus three additional
+                      self-selected.
+                    </li>
+                    <li>
+                      Starting in 2027, ExRad reporting will be
+                      mandatory for all CT scans in adults aged 18
+                      years and older performed in a hospital
+                      outpatient department (including emergency).
+                    </li>
+                  </ul>
+
+                  <div class="section-title">
+                    <h2 class="title-main">How is ExRad defined?</h2>
+                  </div>
+
+                  <figure class="mb-4">
+                    <img
+                      class="img-fluid-custom"
+                      src="assets/images/Exrad_def.JPG"
+                      alt="Diagram explaining ExRad eCQM definition"
+                    />
+                  </figure>
+
+                  <ul class="description mrb-55">
+                    <li>
+                      Number of diagnostic CT scans that have a
+                      size-adjusted radiation dose greater than the
+                      threshold defined for the specific CT category.
+                    </li>
+                    <li>
+                      CT scans with a noise value greater than a
+                      threshold specific to the CT category.
+                    </li>
+                    <li>
+                      Number of all diagnostic CT scans performed on
+                      patients 18 years and older during the one-year
+                      measurement period which have an assigned CT
+                      category.
+                    </li>
+                  </ul>
+
+                  <a
+                    class="btn btn-default mrr-30"
+                    href="https://ecqi.healthit.gov/ecqm/hosp-outpt/2025/cms1206v2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    See full ExRad rule
+                  </a>
+                </div>
               </div>
-              <!--~~./ page-header-content ~~-->
-            </div>
-            <div class="col-md-4">
-              <div class="page-header-thumb">
-                <!-- <img src="assets/images/header/7.png" alt="img"> -->
-              </div>
-              <!--~~./ page-header-thumb ~~-->
             </div>
           </div>
-        </div>
-        <!--~~./ end container ~~-->
-      </div>
-      <!--~~./ end page title area ~~-->
+        </section>
 
-      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            Start About Us Block
-        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <div style="text-align: center">
+        <!-- =============== HOW TO REPORT =============== -->
+        <section
+          class="about-us-block mrb-190"
+          aria-labelledby="report-exrad-title"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="section-title">
+                  <h2
+                    id="report-exrad-title"
+                    class="title-main"
+                  >
+                    How can our institution report ExRad to CMS?
+                  </h2>
+                </div>
 
-      </div>
+                <div class="block-content-info about-content">
+                  <div class="text-center">
+                    <h3 class="h4" style="color: steelblue">
+                      Simply download ProAqCT from the Epic Showroom
+                    </h3>
+                  </div>
 
-      <div id="about-block" class="about-us-block mrb-190">
-        <div class="container">
-          <!-- Title Row -->
-          <div class="row align-items-center">
+                  <figure class="text-center mb-5">
+                    <img
+                      class="img-fluid-custom"
+                      src="assets/images/EPIC_showroom.JPG"
+                      alt="ProAqCT listing in the Epic Showroom"
+                    />
+                  </figure>
 
-            <!-- /.col-lg-7 -->
+                  <div class="text-center">
+                    <h3 class="h4" style="color: steelblue">
+                      ProAqCT automatically reports ExRad to Epic
+                    </h3>
+                  </div>
 
-              <div class="section-title">
-                <h2 class="title-main">Here's what to know about the new CMS reporting Requirements:</h2>
-                <!-- /.title-main -->
+                  <figure class="text-center mb-4">
+                    <img
+                      class="img-fluid-custom"
+                      src="assets/images/results.JPG"
+                      alt="Epic results view showing ExRad data from ProAqCT"
+                    />
+                  </figure>
+
+                  <ul class="description">
+                    <li>
+                      ProAqCT integrates with Epic using FHIR R4. You
+                      can download the ProAqCT client from the Epic
+                      Showroom for free.
+                    </li>
+                    <li>
+                      ProAqCT guarantees top 90th-percentile
+                      performance for ExRad.
+                    </li>
+                    <li>
+                      Higher scores correlate with enhanced
+                      reimbursement rates and help avoid the 2%
+                      reduction in payments for non-compliance.
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <!-- /.section-title -->
-              <div class="block-content-info about-content">
-                <p class="description mrb-55">
-                  In April, CMS announced proposed additions to their electronic clinical quality measures (eCQM) roster,
-                  increasing the number of reportable eCQMs by three. Additionally, CMS has proposed that hospitals and
-                  critical care centers participating in the Hospital Inpatient Quality (IQR) program adopt three new eCQMs.
-                  <br>One of the proposed eCQMs is titled: “Excessive Radiation Dose or Inadequate Image Quality for
-                  Diagnostic Computed Tomography (CT) in Adults (Hospital Level—Inpatient)”. This measure will require
-                  the participant to report the:
-                <ul>
-                  <li>Number of diagnostic CT scans that have a size-adjusted radiation dose
-                    greater than the threshold defined for the specific CT category.</li>
-
-                  <li>CT scans with a noise value greater
-                    than a threshold specific to the CT category.</li>
-
-                  <li>
-                    Number of all diagnostic CT scans performed on
-                    patients 18 years and older during the one-year measurement period which have an assigned CT category.
-                  </li>
-                </ul>
-
-                </p>
-
-                <a class="btn btn-default mrr-30" href='https://www.federalregister.gov/documents/2023/05/01/2023-07389/medicare-program-proposed-hospital-inpatient-prospective-payment-systems-for-acute-care-hospitals'>See full proposed CMS rule here </a>
-
-
-
-              </div>
-              <!-- /.about-content -->
             </div>
-            <!-- /.col-lg-5 -->
           </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </div>
+        </section>
 
-          <div id="about-block" class="about-us-block mrb-190">
-        <div class="container">
-          <!-- Title Row -->
-          <div class="row align-items-center">
-            <div class="col-lg-7">
-              <div class="mock-up-thumb reveal-right in">
+        <!-- =============== ALIGNMENT WITH CMS =============== -->
+        <section
+          class="about-us-block mrb-190"
+          aria-labelledby="alignment-title"
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-7 mb-4 mb-lg-0">
+                <div class="mock-up-thumb reveal-right in text-center">
+                  <img
+                    class="img-fluid-custom"
+                    src="assets/images/CT_image_noise.png"
+                    alt="Visualization of CT image noise metrics in ProAqCT"
+                  />
 
-                <img style="width: 550px ;" src="assets/images/CT_image_noise.png" alt="About Mock" />
-
-                <br>
-                <br>
-
-                <div style="text-align: center">
-                <a class="btn btn-default mrr-30" href='features.html#iq'>Learn More </a>
+                  <div class="hero-cta">
+                    <a
+                      class="btn btn-default mrr-30"
+                      href="features.html#iq"
+                    >
+                      Learn More
+                    </a>
+                  </div>
+                </div>
               </div>
 
+              <div class="col-lg-5">
+                <div class="section-title">
+                  <h2
+                    id="alignment-title"
+                    class="title-main"
+                  >
+                    Let's maximize your CMS reimbursement with ProAqCT!
 
+                  </h2>
+                </div>
+                <div class="block-content-info about-content">
+                  <p class="description mrb-55">
+                    ProAqCT is your all-in-one solution for
+                    comprehensive measurements of global noise and
+                    size-adjusted patient dose in every CT exam. By
+                    leveraging our industry-leading algorithm, ProAqCT
+                    provides a turnkey solution that perfectly aligns
+                    with the proposed CMS requirements.
+                    <br /><br />
+                    Say goodbye to manual categorization and tedious
+                    data analysis. With ProAqCT, you can streamline
+                    your image-quality optimization and effortlessly
+                    meet the new reporting requirements.
+                  </p>
+                </div>
               </div>
-              <!-- /.mock-up-block -->
             </div>
-            <!-- /.col-lg-7 -->
-            <div class="col-lg-5">
-              <div class="section-title">
-                <h2 class="title-main">Here's how ProAqCT perfectly aligns with the proposed CMS requirements</h2>
-                <!-- /.title-main -->
-              </div>
-              <!-- /.section-title -->
-              <div class="block-content-info about-content">
-                <p class="description mrb-55">
-                  ProAqCT is your all-in-one solution for comprehensive measurements of global noise and size-adjusted
-                  patient dose in every CT exam.  By leveraging our industry-leading algorithm, ProAqCT provides a
-                  turn-key solution that perfectly aligns with the proposed CMS requirement. Say goodbye to manual
-                  categorization and tedious data analysis. With ProAqCT, you can streamline your image quality
-                  optimization and effortlessly meet the new reporting requirements.
-                </p>
-              </div>
-              <!-- /.about-content -->
-            </div>
-            <!-- /.col-lg-5 -->
           </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </div>
+        </section>
 
-    <div id="about-block" class="about-us-block mrb-190">
-        <div class="container" id="iq">
-          <!-- Title Row -->
-          <div class="row align-items-center">
-            <!-- /.col-lg-7 -->
-            <div class="col-lg-6 order-lg-1 order-md-2 order-sm-2 order-xs-2">
-              <div class="section-title">
-                <h2 class="title-main" > Let ProAqCT be your trusted partner for CMS Reporting!</h2>
-                  <h4> Don't settle for outdated solutions or struggle to meet the CMS requirement alone. </h4>
-
-                <!-- /.title-main -->
+        <!-- =============== TRUSTED PARTNER SECTION =============== -->
+        <section
+          class="about-us-block mrb-190"
+          aria-labelledby="trusted-partner-title"
+        >
+          <div class="container" id="iq">
+            <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-1 order-2">
+                <div class="section-title">
+                  <h2
+                    id="trusted-partner-title"
+                    class="title-main"
+                  >
+                    Let ProAqCT be your trusted partner for CMS
+                    reporting
+                  </h2>
+                  <h4>
+                    Don’t settle for outdated solutions or struggle to
+                    meet the CMS requirement alone.
+                  </h4>
+                </div>
+                <div class="block-content-info about-content">
+                  <p class="description mrb-55">
+                    While other dose-monitoring platforms are just
+                    catching up or lack the means to fulfill this
+                    requirement, ProAqCT has been at the forefront of
+                    robust image-quality monitoring since 2018.
+                    Throughout these years, we have continuously
+                    enhanced our global noise measurements by
+                    leveraging machine-learning organ segmentation to
+                    implement the Global Noise Index (GNI) methodology
+                    by Ahmad et al. (MD Anderson).
+                    <br /><br />
+                    This approach enables us to offer GNI benchmarking
+                    specific to each exam type or CT category, alert
+                    notifications for image-quality deviations, and
+                    intuitive dashboards that offer valuable insights
+                    for optimizing image quality.
+                    <br /><br />
+                    As you consider options to meet the new reporting
+                    requirements, we hope you will consider ProAqCT as
+                    a cost-effective solution that not only satisfies
+                    the current requirements but also drives
+                    innovation.
+                  </p>
+                </div>
               </div>
-              <!-- /.section-title -->
-              <div class="block-content-info about-content">
-                <p class="description mrb-55">
-                    While other dose monitoring platforms are just catching up or lack the means to fulfill this
-                  requirement, ProAqCT has been at the forefront of robust image quality monitoring since 2018.
-                  Throughout these years, we have continuously enhanced our global noise measurements by leveraging
-                  machine-learning organ segmentation to implement the global noise index (GNI) methodology by Ahmad et
-                  al. (MD Anderson). This approach enables us to offer GNI benchmarking specific to each exam type or CT
-                  category, alert notifications for image quality deviations, and intuitive dashboards that offer valuable
-                  insights for optimizing image quality.
 
-                  <br>
-                  <br>
-                  As you consider options to meet the new reporting requirements, we hope you will consider ProAqCT as
-                  a cost effective solution that not only satisfies the current requirements but also drives innovation.
-
-
-
-                </p>
+              <div class="col-lg-6 order-lg-2 order-1 text-right">
+                <div class="mock-up-thumb reveal-right in">
+                  <img
+                    id="myImg1"
+                    class="img-fluid-custom"
+                    src="assets/images/SSDE_Noise.png"
+                    alt="Dashboard view: compare CT exam performance across sites, scanners, and protocols"
+                  />
+                </div>
+                <div class="hero-cta">
+                  <a
+                    class="btn btn-default mrr-30"
+                    href="contact.html#contact-block"
+                  >
+                    Contact us today to learn about our no-cost,
+                    no-obligation software trial
+                  </a>
+                </div>
               </div>
-              <!-- /.about-content -->
             </div>
-
-            <div class="col-lg-6 order-lg-2 order-md-1 order-sm-1 order-xs-1 text-right">
-              <div class="mock-up-thumb reveal-right in">
-                  <img id="myImg1" style="width: 800px ;" src="assets/images/SSDE_Noise.png"
-                       alt="Users can easily compare performance of an exam/procedure between sites and scanners and
-                       drill down to the scanner protocol level to identify variances in performance.
-                       Starting with the exam/procedure, users can compare mean doses and image quality across various sites.
-                       Users can drill down by clicking the column of the bar graph to see the breakdown across
-                       scanners within that site. Doses and image quality can be drilled down even further by clicking the
-                       scanner column and seeing the dose breakdown by scanner protocol.
-                       Dropdowns on each plot allow users to change the quality index used for the drill down analysis." />
-
-
-              </div>
-              <br>
-              <br>
-              <a class="btn btn-default mrr-30" href="contact.html#contact-block">Contact us today to learn about our no-cost, no-obligation software trial! </a>
-
-              <!-- /.mock-up-block -->
-            </div>
-
-
           </div>
-        </div>
-    </div>
+        </section>
 
-
-
-
-      <div  class="service-block mrb-200">
-        <div class="container ml-b-30">
-          <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-8">
-              <div
-
-              >
-                <h2 class="title-main">
-                    Begin your Image Optimization journey today at zero cost. Reach out to us now!
-
-
-                </h2>
-
-
-
-
+        <!-- =============== FINAL CTA =============== -->
+        <section class="service-block mrb-200">
+          <div class="container ml-b-30">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 col-md-10 text-center">
+                <div class="section-title">
+                  <h2 class="title-main">
+                    Begin your image-optimization journey today at zero
+                    cost.
+                    <br />
+                    Reach out to us now.
+                  </h2>
+                </div>
 
                 <div class="action-btn-group pd-t-50">
-                          <a href="contact.html" class="btn btn-default btn-primary">Schedule a Demo</a>
-                          <a href="contact.html#contact-block" class="btn btn-default">Let's Talk</a>
-                      </div><!-- /.action-btn-group -->
-                <!-- /.title-main -->
-<!--                <div class="hero-desc">-->
-<!--                  We keep you compliant so that you can focus on-->
-<!--                  delivering the best patient care-->
-<!--                </div>-->
+                  <a
+                    href="contact.html"
+                    class="btn btn-default btn-primary m-2"
+                  >
+                    Schedule a Demo
+                  </a>
+                  <a
+                    href="contact.html#contact-block"
+                    class="btn btn-default m-2"
+                  >
+                    Let’s Talk
+                  </a>
+                </div>
               </div>
-              <!-- /.section-title -->
             </div>
-            <!-- /.col-lg-6 -->
           </div>
-        </div>
+        </section>
+      </main>
+    </div>
 
-
-
-    <!-- All The JS Files
-    ================================================== -->
+    <!-- JS (loaded at end for performance) -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -423,23 +566,6 @@
     <script src="assets/js/isInViewport.jquery.js"></script>
     <script src="assets/js/TweenMax.min.js"></script>
     <script src="assets/js/main.js"></script>
-          <script src="assets/js/header_jan.js"></script>
-    <!-- main-js -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="assets/js/header_jan.js"></script>
+  </body>
 </html>
